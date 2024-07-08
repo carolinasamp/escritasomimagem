@@ -1,0 +1,30 @@
+@import "./utils/variables.scss";
+@import "./utils/reset.scss";
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    $color-orange-1,
+    $color-orange-2
+  );
+  height: 100vh;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  color: $color-white;
+}
+
+@media (max-width: $mobile) {
+  .app {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .app {
+    max-width: 600px;
+  }
+}

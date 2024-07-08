@@ -1,0 +1,32 @@
+.search {
+  padding: 20px;
+  background-color: #f0f0f0; /* Fundo cinza claro */
+  height: calc(100vh - 40px); /* Altura total menos a altura da barra de tabs */
+  border-right: 1px solid #ccc; /* Linha divisória à direita */
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  button {
+    background-color: #f7931e; /* Laranja */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #e6841e; /* Laranja mais escuro ao passar o mouse */
+    }
+  }
+}

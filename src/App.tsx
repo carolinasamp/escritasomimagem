@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Tabs from "./components/Tabs";
+import Search from "./components/Search";
+import Carousel from "./components/Carousel";
+import Header from "./modules/Header";
+import "./style.scss";
 
-function App() {
+const App: React.FC = () => {
+  const [activeTabIndex, setActiveTabIndex] = useState(0); // Estado para a tab ativa
+
+  const tabs = [{ label: "Pesquisa" }, { label: "Carrossel" }];
+
+  const slides = [
+    {
+      image: "https://via.placeholder.com/800x400",
+      title: "title",
+      description: "description",
+    },
+    {
+      image: "https://via.placeholder.com/800x400",
+      title: "title",
+      description: "description",
+    },
+    {
+      image: "https://via.placeholder.com/800x400",
+      title: "title",
+      description: "description",
+    },
+  ];
+
+  const handleTabChange = (index: number) => {
+    setActiveTabIndex(index);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <div className="app">
+        <Tabs tabs={tabs} onChangeTab={handleTabChange} />
+        <div className="content">
+          {/* {activeTabIndex === 0 && <Search />} */}
+          {activeTabIndex === 1 && <Carousel slides={slides} />}
+        </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
