@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -10,11 +11,17 @@ module.exports = {
         use: "ts-loader",
         exclude: /node_modules/,
       },
-      // {
-      //   test: /\.(png|svg|jpg|gif)$/,
-      //   exclude: /node_modules/,
-      //   use: ["file-loader"],
-      // },
+      {
+        test: /\.(png|svg|jpe?g|gif)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 25000,
+            },
+          },
+        ],
+      },
       {
         test: /\.s[ac]ss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
@@ -32,6 +39,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "public/robots.txt", to: "robots.txt" }],
     }),
   ],
 };

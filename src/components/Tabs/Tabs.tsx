@@ -1,28 +1,26 @@
-import { useState } from "react";
-import { TabsProps } from "./types";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  NavLink,
+} from "react-router-dom";
+import "./style.scss";
+import RouteInformation from "../../routes";
 
-const Tabs = ({ tabs, onChangeTab }: TabsProps) => {
-  const [activeTab, setActiveTab] = useState(0);
-
-  const handleTabClick = (index: number) => {
-    setActiveTab(index);
-    onChangeTab(index);
-  };
-
+const Tabs = () => {
   return (
     <div className="tabs">
-      {tabs.map((tab, index) => (
-        <div
-          key={index}
-          className={`tab ${activeTab === index ? "active" : ""}`}
-          onClick={() => handleTabClick(index)}
-          onKeyDown={() => handleTabClick(index)}
-        >
-          {tab.label}
-        </div>
-      ))}
+      <nav className="tab-header">
+        {RouteInformation.map((route, index) => {
+          const { title, url } = route;
+          return (
+            <NavLink key={index} to={url} className="tab-link" title={title}>
+              {title}
+            </NavLink>
+          );
+        })}
+      </nav>
     </div>
   );
 };
-
 export default Tabs;

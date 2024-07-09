@@ -15,6 +15,7 @@ module.exports = merge(common, {
     compress: true,
     port: 9000,
     watchFiles: ["src/**/*"],
+    historyApiFallback: true,
   },
   plugins: [new WebpackBar()],
 });

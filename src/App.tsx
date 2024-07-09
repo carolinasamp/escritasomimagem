@@ -3,46 +3,44 @@ import Tabs from "./components/Tabs";
 import Search from "./components/Search";
 import Carousel from "./components/Carousel";
 import Header from "./modules/Header";
+import Footer from "./modules/Footer";
 import "./style.scss";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RouteInformation from "./routes";
 
-const App: React.FC = () => {
-  const [activeTabIndex, setActiveTabIndex] = useState(0); // Estado para a tab ativa
-
-  const tabs = [{ label: "Pesquisa" }, { label: "Carrossel" }];
-
-  const slides = [
-    {
-      image: "https://via.placeholder.com/800x400",
-      title: "title",
-      description: "description",
-    },
-    {
-      image: "https://via.placeholder.com/800x400",
-      title: "title",
-      description: "description",
-    },
-    {
-      image: "https://via.placeholder.com/800x400",
-      title: "title",
-      description: "description",
-    },
-  ];
-
-  const handleTabChange = (index: number) => {
-    setActiveTabIndex(index);
-  };
+const App = () => {
+  // const slides = [
+  //   {
+  //     image: "https://via.placeholder.com/800x400",
+  //     title: "title",
+  //     description: "description",
+  //   },
+  //   {
+  //     image: "https://via.placeholder.com/800x400",
+  //     title: "title",
+  //     description: "description",
+  //   },
+  //   {
+  //     image: "https://via.placeholder.com/800x400",
+  //     title: "title",
+  //     description: "description",
+  //   },
+  // ];
 
   return (
-    <>
+    <Router>
       <Header />
       <div className="app">
-        <Tabs tabs={tabs} onChangeTab={handleTabChange} />
-        <div className="content">
-          {/* {activeTabIndex === 0 && <Search />} */}
-          {activeTabIndex === 1 && <Carousel slides={slides} />}
-        </div>
+        <Tabs />
+        <Routes>
+          {RouteInformation.map((route, index) => {
+            const { url, element } = route;
+            return <Route key={index} path={url} element={element} />;
+          })}
+        </Routes>
       </div>
-    </>
+      <Footer />
+    </Router>
   );
 };
 

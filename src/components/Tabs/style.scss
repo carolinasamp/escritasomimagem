@@ -1,0 +1,42 @@
+.tabs {
+  width: 100%;
+  margin: 0 auto;
+
+  .tab-header {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    background-color: #f1f1f1;
+
+    .tab-link {
+      flex: 1;
+      padding: 10px 20px;
+      text-align: center;
+      background-color: #f1f1f1;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #000;
+
+      &.active {
+        background-color: #fff;
+        border-bottom: 2px solid #007bff; /* Ajuste para a cor que preferir */
+      }
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+
+  .tab-content {
+    .tab-pane {
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  }
+}
