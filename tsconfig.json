@@ -9,7 +9,8 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "typeRoots": ["./types", "./node_modules/@types"]
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "types": ["googlemaps"]
   },
   "include": ["./src/**/*", "./types/**/*"]
 }

@@ -2,29 +2,30 @@
 @import "./utils/reset.scss";
 
 body {
-  font-family: "Arial", sans-serif;
-  background: linear-gradient(
-    to bottom right,
-    $color-orange-1,
-    $color-orange-2
-  );
-  height: 100vh;
+  color: $color-white;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to bottom right, $color-base, $color-black);
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
 }
 
-.app {
-  max-width: 800px;
+.container {
+  margin-left: calc(100% - 980px / 2);
+  max-width: 980px;
+  width: 100%;
   margin: 0 auto;
-  color: $color-white;
+  height: 100%;
 }
 
 @media (max-width: $mobile) {
-  .app {
+  .container {
     max-width: 400px;
   }
 }
 
 @media (min-width: $mobile) and (max-width: $tablet) {
-  .app {
+  .container {
     max-width: 600px;
   }
 }

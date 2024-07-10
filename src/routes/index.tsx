@@ -1,5 +1,4 @@
 import {
-  About,
   Home,
   OrganizingCommittee,
   ScientificCommittee,
@@ -8,42 +7,44 @@ import {
 } from "../pages";
 
 export enum RoutesURL {
-  HOME = "",
-  ABOUT = "/sobre",
+  HOME = "/",
   THEMATIC_AREAS = "/eixos-tematicos",
   SPEAKERS = "/conferencistas",
   ORGANIZING_COMMITTEE = "/comissao-organizadora",
   SCIENTIFIC_COMMITTEE = "/comite-cientifico",
 }
 
+export enum RoutesTitle {
+  HOME = "Escrita, som, imagem",
+  THEMATIC_AREAS = "Eixos temáticos",
+  SPEAKERS = "Conferencistas",
+  ORGANIZING_COMMITTEE = "Comissão organizadora",
+  SCIENTIFIC_COMMITTEE = "Comitê científico",
+}
+
 const RouteInformation = [
   {
-    title: "Home",
+    title: RoutesTitle.HOME,
     url: RoutesURL.HOME,
     element: <Home />,
   },
   {
-    title: "sobre",
-    url: RoutesURL.ABOUT,
-    element: <About />,
-  },
-  {
-    title: "Eixos temáticos",
+    title: RoutesTitle.THEMATIC_AREAS,
     url: RoutesURL.THEMATIC_AREAS,
     element: <ThematicAreas />,
   },
   {
-    title: "Conferencistas",
+    title: RoutesTitle.SPEAKERS,
     url: RoutesURL.SPEAKERS,
     element: <Speakers />,
   },
   {
-    title: "Comissão organizadora",
+    title: RoutesTitle.ORGANIZING_COMMITTEE,
     url: RoutesURL.ORGANIZING_COMMITTEE,
     element: <OrganizingCommittee />,
   },
   {
-    title: "Comitê científico",
+    title: RoutesTitle.SCIENTIFIC_COMMITTEE,
     url: RoutesURL.SCIENTIFIC_COMMITTEE,
     element: <ScientificCommittee />,
   },

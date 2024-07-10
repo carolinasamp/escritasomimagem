@@ -17,5 +17,20 @@ module.exports = merge(common, {
     watchFiles: ["src/**/*"],
     historyApiFallback: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: "image-webpack-loader",
+            options: {
+              disable: true,
+            },
+          },
+        ],
+      },
+    ],
+  },
   plugins: [new WebpackBar()],
 });

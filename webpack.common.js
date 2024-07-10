@@ -12,15 +12,12 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|svg|jpe?g|gif)$/,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              limit: 25000,
-            },
-          },
-        ],
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.s[ac]ss$/i,

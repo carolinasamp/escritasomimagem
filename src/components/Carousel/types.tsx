@@ -1,7 +1,10 @@
-import { CarouselItemProps } from "../CarouselItem/types";
+type CarouselItemProps = {
+  image: string;
+  title: string;
+};
 
 type CarouselProps = {
   slides: CarouselItemProps[];
 };
 
-export type { CarouselProps };
+export type { CarouselProps, CarouselItemProps };

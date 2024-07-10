@@ -1,0 +1,31 @@
+@import "../../utils/variables.scss";
+
+.next-page-box {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+
+  &-link {
+    display: flex;
+    width: fit-content;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-white;
+
+    &:hover {
+      color: transparent;
+      background: linear-gradient(45deg, #f18437, #ffb347);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: linear-gradient(45deg, #f18437, #ffb347);
+    }
+  }
+
+  &-arrow {
+    align-content: center;
+    margin-left: 8px;
+    font-size: 24px;
+  }
+}

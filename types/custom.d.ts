@@ -5,3 +5,5 @@ interface NodeModule {
     data: any;
   };
 }
+
+declare var google: any;

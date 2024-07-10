@@ -13,7 +13,6 @@ const serveIndexHtml = (req: express.Request, res: express.Response) => {
 };
 
 app.get(RoutesURL.HOME, serveIndexHtml);
-app.get(RoutesURL.ABOUT, serveIndexHtml);
 app.get(RoutesURL.THEMATIC_AREAS, serveIndexHtml);
 app.get(RoutesURL.SPEAKERS, serveIndexHtml);
 app.get(RoutesURL.ORGANIZING_COMMITTEE, serveIndexHtml);

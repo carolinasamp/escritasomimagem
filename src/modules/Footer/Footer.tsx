@@ -1,6 +1,8 @@
 import { memo } from "react";
 import { organizers, supporters } from "./mapper";
 import "./style.scss";
+import LazyLoad from "react-lazyload";
+import ImagePlaceholder from "../../components/ImagePlaceholder";
 
 const Footer = () => {
   return (
@@ -14,7 +16,7 @@ const Footer = () => {
 
               return (
                 <li key={index}>
-                  <img {...{ src, alt }} />
+                  <ImagePlaceholder {...{ src, alt }} />
                 </li>
               );
             })}
@@ -28,7 +30,7 @@ const Footer = () => {
 
               return (
                 <li key={index}>
-                  <img {...{ src, alt }} />
+                  <ImagePlaceholder key={index} {...{ src, alt }} />
                 </li>
               );
             })}

@@ -1,0 +1,56 @@
+@import "../utils/variables.scss";
+
+.internal-pages {
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 45px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+
+  strong,
+  h3,
+  h2,
+  li::marker {
+    color: $color-orange;
+  }
+
+  h3,
+  li::marker {
+    font-size: 20px;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+  li::marker {
+    font-weight: 700;
+  }
+}
+
+.thematic {
+  background-color: $color-white;
+  padding: 40px;
+
+  p {
+    text-align: justify;
+    color: #000;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-indent: 4em;
+  }
+
+  ol {
+    margin-top: 16px;
+
+    li {
+      margin-bottom: 16px;
+      margin-left: 30px;
+
+      p {
+        margin-top: 6px;
+      }
+    }
+  }
+}

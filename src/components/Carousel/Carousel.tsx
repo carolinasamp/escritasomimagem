@@ -1,33 +1,67 @@
 import { useState, useEffect } from "react";
-import CarouselItem from "../CarouselItem";
 import { CarouselProps } from "./types";
-import "./styles.scss";
+import "./style.scss";
+import ImagePlaceholder from "../ImagePlaceholder";
 
 const Carousel = ({ slides }: CarouselProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((currentSlide + 1) % slides.length);
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
     }, 3000);
-
     return () => clearInterval(interval);
-  }, [currentSlide, slides.length]);
+  }, [slides.length]);
+
+  const handlePrevClick = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 0 ? slides.length - 1 : prevSlide - 1
+    );
+  };
+
+  const handleNextClick = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === slides.length - 1 ? 0 : prevSlide + 1
+    );
+  };
+
+  const handleDotClick = (index: number) => {
+    setCurrentSlide(index);
+  };
 
   return (
     <div className="carousel">
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`carousel-slide ${index === currentSlide ? "active" : ""}`}
-        >
-          <CarouselItem
-            image={slide.image}
-            title={slide.title}
-            description={slide.description}
+      <div className="carousel-slides">
+        {slides.map((slide, index) => {
+          const { image, title } = slide;
+
+          return (
+            <ImagePlaceholder
+              key={index}
+              src={image}
+              alt={title}
+              className={`carousel-slide ${
+                index === currentSlide ? "active" : ""
+              }`}
+            />
+          );
+        })}
+      </div>
+      <button className="carousel-button prev" onClick={handlePrevClick}>
+        &#10094;
+      </button>
+      <button className="carousel-button next" onClick={handleNextClick}>
+        &#10095;
+      </button>
+      <div className="carousel-dots">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            className={`carousel-dot ${index === currentSlide ? "active" : ""}`}
+            onClick={() => handleDotClick(index)}
           />
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

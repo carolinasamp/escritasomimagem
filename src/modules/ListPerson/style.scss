@@ -1,0 +1,46 @@
+@import "../../utils/variables.scss";
+
+.list-person-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
+
+  .person {
+    display: flex;
+    flex: 0 0 calc(33.33% - 20px);
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 20px; /* Espaçamento entre as pessoas */
+  }
+
+  .person-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .person img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 16px;
+  }
+
+  .person-details {
+    flex: 1;
+  }
+
+  .person-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .person-presentation {
+    font-size: 14px;
+  }
+}
