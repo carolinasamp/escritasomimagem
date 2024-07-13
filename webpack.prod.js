@@ -47,8 +47,4 @@ module.exports = merge(common, {
       filename: "[name].[contenthash].css",
     }),
   ],
-  output: {
-    filename: "[name].[contenthash].js",
-    path: path.resolve(__dirname, "dist"),
-  },
 });

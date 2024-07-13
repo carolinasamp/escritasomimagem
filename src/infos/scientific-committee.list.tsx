@@ -11,7 +11,7 @@ export const ScientificCommitteeList = [
   },
   {
     name: "Ana Cláudia Munari",
-    presentation: "UNISC/CNPq",
+    presentation: "UNISC/ CNPq",
     picture: "https://via.placeholder.com/100x100",
   },
   {
@@ -116,12 +116,12 @@ export const ScientificCommitteeList = [
   },
   {
     name: "Luciene Guimarães",
-    presentation: "UFSJ/Capes",
+    presentation: "UFSJ/ Capes",
     picture: "https://via.placeholder.com/100x100",
   },
   {
     name: "Márcia Arbex",
-    presentation: "UFMG/CNPq",
+    presentation: "UFMG/ CNPq",
     picture: "https://via.placeholder.com/100x100",
   },
   {
@@ -131,7 +131,7 @@ export const ScientificCommitteeList = [
   },
   {
     name: "Maria Cristina Cardoso Ribas",
-    presentation: "UERJ/FAPERJ/CNPq",
+    presentation: "UERJ/ FAPERJ/ CNPq",
     picture: "https://via.placeholder.com/100x100",
   },
   {
@@ -151,7 +151,7 @@ export const ScientificCommitteeList = [
   },
   {
     name: "Miriam de Paiva Vieira",
-    presentation: "UFSJ/CNPq",
+    presentation: "UFSJ/ CNPq",
     picture: "https://via.placeholder.com/100x100",
   },
   {
@@ -181,7 +181,7 @@ export const ScientificCommitteeList = [
   },
   {
     name: "Thais Flores Nogueira Diniz",
-    presentation: "UFMG/CNPq",
+    presentation: "UFMG/ CNPq",
     picture: "https://via.placeholder.com/100x100",
   },
 ];

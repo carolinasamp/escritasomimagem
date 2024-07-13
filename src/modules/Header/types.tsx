@@ -1,10 +1,7 @@
-type Tab = {
-  label: string;
+import { ViewportEnum } from "../../context/Viewport.context";
+
+type HeaderProps = {
+  viewport: ViewportEnum;
 };
 
-type TabsProps = {
-  tabs: Tab[];
-  onChangeTab: (index: number) => void;
-};
-
-export type { Tab, TabsProps };
+export { HeaderProps };

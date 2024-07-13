@@ -19,13 +19,17 @@ body {
 }
 
 @media (max-width: $mobile) {
-  .container {
-    max-width: 400px;
+  .main-content {
+    .container {
+      max-width: 400px;
+    }
   }
 }
 
 @media (min-width: $mobile) and (max-width: $tablet) {
-  .container {
-    max-width: 600px;
+  .main-content {
+    .container {
+      max-width: 600px;
+    }
   }
 }

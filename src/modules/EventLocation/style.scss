@@ -5,4 +5,8 @@
   max-height: 300px;
   position: relative;
   margin: 45px 0 45px;
+
+  > div:last-child {
+    width: 100%;
+  }
 }

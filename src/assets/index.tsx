@@ -26,6 +26,10 @@ import Osvaldo from "./Osvaldo.jpg";
 import VeraFollain from "./Vera Follain.jpg";
 import Veronica from "./Veronica.png";
 
+// icons
+import SideMenuIcon from "./SideMenu.icon";
+import ArrowIcon from "./Arrow.icon";
+
 export {
   apoiador1,
   apoiador2,
@@ -52,4 +56,6 @@ export {
   Osvaldo,
   VeraFollain,
   Veronica,
+  SideMenuIcon,
+  ArrowIcon,
 };

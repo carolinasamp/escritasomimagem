@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { CarouselProps } from "./types";
 import "./style.scss";
-import ImagePlaceholder from "../ImagePlaceholder";
+import ImageWithLoader from "../ImageWithLoader";
 
 const Carousel = ({ slides }: CarouselProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -36,7 +36,7 @@ const Carousel = ({ slides }: CarouselProps) => {
           const { image, title } = slide;
 
           return (
-            <ImagePlaceholder
+            <ImageWithLoader
               key={index}
               src={image}
               alt={title}

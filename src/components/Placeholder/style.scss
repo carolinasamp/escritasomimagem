@@ -1,0 +1,35 @@
+@import "../../utils/variables.scss";
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.placeholder {
+  background: linear-gradient(
+    45deg,
+    $color-base-light,
+    $color-base,
+    $color-base-light
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  width: 100%;
+  min-height: 32px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-text {
+  color: $color-white;
+  font-size: 16px;
+}

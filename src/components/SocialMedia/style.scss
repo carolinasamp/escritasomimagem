@@ -1,0 +1,38 @@
+@import "../../utils/variables.scss";
+
+.social-media {
+  display: flex;
+  font-size: 14px;
+}
+
+.social-media-content {
+  list-style: none;
+  margin-left: 16px;
+  color: $color-white;
+
+  a {
+    margin-right: 10px;
+    display: flex;
+    text-decoration: none;
+    color: $color-white;
+
+    &:hover {
+      color: transparent;
+      background: linear-gradient(45deg, #f18437, #ffb347);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: linear-gradient(45deg, #f18437, #ffb347);
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 8px;
+    }
+
+    p {
+      align-content: center;
+    }
+  }
+}

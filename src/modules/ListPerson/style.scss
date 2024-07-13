@@ -10,37 +10,72 @@
   .person {
     display: flex;
     flex: 0 0 calc(33.33% - 20px);
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     box-sizing: border-box;
     margin-bottom: 20px;
-    margin-right: 20px; /* Espaçamento entre as pessoas */
+    margin-right: 20px;
+    padding: 10px;
   }
 
-  .person-content {
-    display: flex;
-    align-items: center;
-  }
-
-  .person img {
-    width: 100px;
+  .person-lazy-load {
+    min-width: 100px;
+    min-height: 100px;
     height: 100px;
-    object-fit: cover;
     margin-right: 16px;
   }
 
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
   .person-details {
-    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .person-name {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 5px;
   }
 
   .person-presentation {
     font-size: 14px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .list-person-container {
+    .person {
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .list-person-container {
+    .person {
+      flex: 0 0 calc(50% - 20px);
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .list-person-container {
+    .person {
+      flex: 0 0 calc(100% - 20px);
+      margin-right: 0;
+    }
   }
 }

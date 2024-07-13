@@ -1,10 +1,6 @@
-type Tab = {
-  label: string;
-};
-
 type TabsProps = {
-  tabs: Tab[];
-  onChangeTab: (index: number) => void;
+  className?: string;
+  hasArrow?: boolean;
 };
 
-export type { Tab, TabsProps };
+export type { TabsProps };

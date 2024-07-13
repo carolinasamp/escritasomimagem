@@ -1,6 +1,7 @@
 // import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import { GoogleMap, LoadScript, MarkerF } from "@react-google-maps/api";
 import "./style.scss";
+import Placeholder from "../../components/Placeholder";
 
 const EventLocation = () => {
   const markerPosition = {
@@ -10,26 +11,17 @@ const EventLocation = () => {
 
   return (
     <section className="event-location">
-      {/* @ts-ignore */}
-      {/* <Map
-        google={google}
-        zoom={15}
-        initialCenter={markerPosition}
-        center={markerPosition}
+      <LoadScript
+        googleMapsApiKey="AIzaSyDL-lJpjYLj-uezxBDFauPEYosi1eIEosc"
+        libraries={["places"]}
+        loadingElement={<Placeholder />}
       >
-        <Marker position={markerPosition} />
-      </Map> */}
-      <LoadScript googleMapsApiKey="AIzaSyDL-lJpjYLj-uezxBDFauPEYosi1eIEosc">
         <GoogleMap center={markerPosition} zoom={15}>
-          <Marker position={markerPosition} />
+          <MarkerF position={markerPosition} />
         </GoogleMap>
       </LoadScript>
     </section>
   );
 };
-
-// export default GoogleApiWrapper((props) => ({
-//   apiKey: "AIzaSyDL-lJpjYLj-uezxBDFauPEYosi1eIEosc",
-// }))(EventLocation);
 
 export default EventLocation;

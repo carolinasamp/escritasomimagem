@@ -1,30 +1,33 @@
-import { memo } from "react";
+import { memo, useState } from "react";
 import "./style.scss";
-import { SocialMediaList } from "../../infos/social-medias.list";
-import ImagePlaceholder from "../../components/ImagePlaceholder";
+import SocialMedia from "../../components/SocialMedia";
+import { HeaderProps } from "./types";
+import { ViewportEnum } from "../../context/Viewport.context";
+import { SideMenuIcon } from "../../assets";
+import SideMenu from "../../components/SideMenu/SideMenu";
 
-const Header = () => {
+const Header = ({ viewport }: HeaderProps) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
-      <ul className="social-media">
-        {SocialMediaList.map((socialMedia, index) => {
-          const { social, link, icon, text } = socialMedia;
+      {viewport === ViewportEnum.DESKTOP ? (
+        <div className="header-content">
+          <SocialMedia className="header-social-media" />
+        </div>
+      ) : (
+        <div className="header-side-menu">
+          <button className="header-side-menu-button" onClick={toggleMenu}>
+            <SideMenuIcon />
+          </button>
 
-          return (
-            <li key={index} className="social-media-content">
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                <ImagePlaceholder
-                  className="social-media-lazy"
-                  key={index}
-                  src={icon}
-                  alt={social}
-                />
-                <p>{text}</p>
-              </a>
-            </li>
-          );
-        })}
-      </ul>
+          <SideMenu {...{ isMenuOpen, toggleMenu }} />
+        </div>
+      )}
     </header>
   );
 };
