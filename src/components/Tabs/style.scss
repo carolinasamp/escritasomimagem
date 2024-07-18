@@ -2,52 +2,101 @@
 
 .tabs {
   width: 100%;
-  margin: 30px auto 45px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
 
   .tab-header {
     display: flex;
+    box-sizing: border-box;
   }
 
-  .tab-link {
-    flex: 1;
-    padding: 10px;
-    text-align: center;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 18px;
-    text-decoration: none;
-    color: $color-white;
+  .tab-item {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-
-    .feather-arrow {
-      transform: rotate(90deg);
-      stroke: $color-white;
-      margin-left: 8px;
-    }
 
     &.active,
     &:hover {
-      color: transparent;
-      background: linear-gradient(45deg, #f18437, #ffb347);
-      -webkit-background-clip: text;
-      background-clip: text;
+      .tab-link {
+        color: transparent;
+        background: linear-gradient(45deg, #f18437, $color-orange);
+        -webkit-background-clip: text;
+        background-clip: text;
 
-      .feather-arrow {
-        stroke: #f18437;
+        .arrow-icon {
+          transform: rotate(270deg);
+          fill: #f18437;
+        }
+      }
+    }
+
+    .tab-link {
+      padding: 10px;
+      text-align: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 18px;
+      text-decoration: none;
+      color: $color-white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      .arrow-icon {
+        transform: rotate(90deg);
+        fill: $color-white;
+        margin-left: 8px;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    .sub-tabs {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-top: none;
+      z-index: 1;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      border-radius: 4px;
+      overflow: hidden;
+      font-size: 15px;
+
+      &.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .sub-tab-link {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 700;
+        border-bottom: 1px solid #ccc;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &:hover,
+        &.active {
+          background-color: #f1f1f1;
+          color: $color-orange;
+        }
       }
     }
   }
 
-  .tab-content {
-    .tab-pane {
-      padding: 20px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-top: none;
-    }
+  .tab-item.active .sub-tabs {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

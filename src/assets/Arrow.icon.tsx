@@ -1,4 +1,4 @@
-const ArrowIcon = () => (
+const ArrowIcon = ({ className }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -9,7 +9,7 @@ const ArrowIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="feather feather-arrow"
+    className={`feather feather-arrow ${className || ""}`}
   >
     <path d="M12 19V5M5 12l7-7 7 7" />
   </svg>

@@ -1,0 +1,40 @@
+@import "../../utils/variables.scss";
+
+.esi-service {
+  margin-bottom: 45px;
+
+  &-content {
+    margin-bottom: 32px;
+
+    p {
+      margin-bottom: 16px;
+      text-align: justify;
+
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      display: inline-flex;
+      font-weight: 700;
+      color: $color-orange;
+      text-decoration: underline;
+      align-items: center;
+
+      svg {
+        width: 15px;
+        height: 15px;
+        stroke: $color-orange;
+      }
+
+      &:hover {
+        color: $color-orange-2;
+
+        svg {
+          stroke: $color-orange-2;
+        }
+      }
+    }
+  }
+}

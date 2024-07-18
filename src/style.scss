@@ -8,28 +8,79 @@ body {
   height: 100%;
   width: 100%;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .container {
-  margin-left: calc(100% - 980px / 2);
   max-width: 980px;
   width: 100%;
   margin: 0 auto;
   height: 100%;
+  box-sizing: border-box;
 }
 
-@media (max-width: $mobile) {
-  .main-content {
-    .container {
-      max-width: 400px;
-    }
+.box {
+  background-color: $color-white;
+  border-radius: 4px;
+  padding: 40px;
+  color: $color-black;
+}
+
+.esi-pages-search {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.esi-pages {
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 45px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+
+  > section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 }
 
-@media (min-width: $mobile) and (max-width: $tablet) {
+strong,
+h3,
+h2,
+li::marker {
+  color: $color-orange;
+}
+
+h3,
+li::marker {
+  font-size: 20px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+li::marker {
+  font-weight: 700;
+}
+
+.title-page {
+  margin-bottom: 16px;
+}
+
+@media (max-width: $tablet) {
   .main-content {
     .container {
-      max-width: 600px;
+      max-width: inherit;
+      margin: 30px 16px 16px;
+      width: calc(100% - 16px * 2);
+    }
+
+    .box {
+      padding: 20px;
     }
   }
 }

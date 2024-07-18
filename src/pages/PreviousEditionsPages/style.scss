@@ -1,0 +1,62 @@
+@import "../../utils/variables.scss";
+
+.esi-previous-edition {
+  &-content {
+    text-align: justify;
+    margin: 16px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-image-wrapper {
+    width: 100%;
+    display: flex;
+  }
+
+  &-image-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-right: 16px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      max-width: 400px;
+      max-height: 400px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 4px;
+    }
+
+    a {
+      margin-top: 8px;
+      font-size: 16px;
+      text-decoration: none;
+      color: $color-black;
+      font-weight: 700;
+
+      &:hover {
+        color: $color-orange;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .esi-previous-edition-image-wrapper {
+    flex-direction: column;
+  }
+}

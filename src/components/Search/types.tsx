@@ -1,10 +1,8 @@
-type Tab = {
-  label: string;
+import { PersonType } from "../../modules/ListPerson/types";
+
+type SearchProps = {
+  list: PersonType[];
+  onSearch: (person: PersonType[]) => void;
 };
 
-type TabsProps = {
-  tabs: Tab[];
-  onChangeTab: (index: number) => void;
-};
-
-export type { Tab, TabsProps };
+export type { SearchProps };

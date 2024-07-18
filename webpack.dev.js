@@ -20,7 +20,7 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
+        test: /\.(png|jpe?g|gif|svg|mp4)$/i,
         use: [
           {
             loader: "image-webpack-loader",

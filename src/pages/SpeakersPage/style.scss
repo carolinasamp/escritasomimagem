@@ -1,0 +1,11 @@
+@import "../../utils/variables.scss";
+
+@media (max-width: $tablet) {
+  .list-person--speakers {
+    flex-direction: column;
+
+    .lazyload-wrapper {
+      margin: 0 0 16px;
+    }
+  }
+}

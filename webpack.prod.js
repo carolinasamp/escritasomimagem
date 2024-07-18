@@ -13,7 +13,7 @@ module.exports = merge(common, {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
+        test: /\.(png|jpe?g|gif|svg|mp4)$/i,
         use: [
           {
             loader: "image-webpack-loader",

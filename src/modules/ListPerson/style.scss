@@ -2,40 +2,41 @@
 
 .list-person-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   font-family: "Roboto", sans-serif;
+  flex-direction: column;
   letter-spacing: 1.5px;
 
   .person {
     display: flex;
-    flex: 0 0 calc(33.33% - 20px);
-    align-items: center;
-    justify-content: flex-start;
     box-sizing: border-box;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    padding: 10px;
+    margin: 8px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
   }
 
-  .person-lazy-load {
-    min-width: 100px;
-    min-height: 100px;
-    height: 100px;
+  .lazyload-wrapper {
+    min-width: 150px;
+    min-height: 150px;
+    width: fit-content;
+    height: 150px;
     margin-right: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-self: center;
   }
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-  }
-
-  .person-details {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
   }
 
   .person-name {
@@ -45,37 +46,19 @@
   }
 
   .person-presentation {
+    font-weight: 700;
     font-size: 14px;
   }
-}
 
-@media (min-width: $tablet) {
-  .list-person-container {
-    .person {
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
-    }
+  .person-details {
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
-}
 
-@media (max-width: $tablet) {
-  .list-person-container {
-    .person {
-      flex: 0 0 calc(50% - 20px);
-
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-@media (max-width: $mobile) {
-  .list-person-container {
-    .person {
-      flex: 0 0 calc(100% - 20px);
-      margin-right: 0;
-    }
+  .person-details-content a {
+    color: #f7931e;
   }
 }

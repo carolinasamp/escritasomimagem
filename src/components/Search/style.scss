@@ -1,32 +1,38 @@
+@import "../../utils/variables.scss";
+
+.search-container {
+  position: relative;
+  width: 100%;
+  justify-content: right;
+  display: flex;
+  width: 300px;
+}
+
 .search {
-  padding: 20px;
-  background-color: #f0f0f0; /* Fundo cinza claro */
-  height: calc(100vh - 40px); /* Altura total menos a altura da barra de tabs */
-  border-right: 1px solid #ccc; /* Linha divisória à direita */
+  padding: 10px 30px 10px 10px;
+  background-color: $color-white;
+  border-radius: 4px;
+  outline: none;
+  border: 0;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-black;
+  font-family: "Roboto", sans-serif;
+}
 
-  h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
+.clear-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
 
-  input[type="text"],
-  button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 1rem;
-  }
-
-  button {
-    background-color: #f7931e; /* Laranja */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: #e6841e; /* Laranja mais escuro ao passar o mouse */
-    }
+  &:hover {
+    color: $color-orange;
   }
 }

@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { SocialMediaList } from "../../infos/social-medias.list";
-import ImageWithLoader from "../ImageWithLoader";
+import ImageWithLoader from "../LazyLoadImage";
 import { SocialMediaProps } from "./types";
 import "./style.scss";
 

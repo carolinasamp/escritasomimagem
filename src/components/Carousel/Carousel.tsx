@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { CarouselProps } from "./types";
 import "./style.scss";
-import ImageWithLoader from "../ImageWithLoader";
+import ImageWithLoader from "../LazyLoadImage";
 
 const Carousel = ({ slides }: CarouselProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -15,11 +15,11 @@
 
     &:hover {
       color: transparent;
-      background: linear-gradient(45deg, #f18437, #ffb347);
+      background: linear-gradient(45deg, #f18437, $color-orange);
       background-clip: border-box;
       -webkit-background-clip: text;
       background-clip: text;
-      color: linear-gradient(45deg, #f18437, #ffb347);
+      color: linear-gradient(45deg, #f18437, $color-orange);
     }
   }
 

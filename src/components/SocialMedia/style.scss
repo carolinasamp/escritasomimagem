@@ -7,22 +7,22 @@
 
 .social-media-content {
   list-style: none;
-  margin-left: 16px;
+  margin-left: 8px;
   color: $color-white;
 
   a {
-    margin-right: 10px;
+    margin-right: 4px;
     display: flex;
     text-decoration: none;
     color: $color-white;
 
     &:hover {
       color: transparent;
-      background: linear-gradient(45deg, #f18437, #ffb347);
+      background: linear-gradient(45deg, #f18437, $color-orange);
       background-clip: border-box;
       -webkit-background-clip: text;
       background-clip: text;
-      color: linear-gradient(45deg, #f18437, #ffb347);
+      color: linear-gradient(45deg, #f18437, $color-orange);
     }
 
     img {

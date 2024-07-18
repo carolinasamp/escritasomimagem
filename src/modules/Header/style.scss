@@ -2,14 +2,33 @@
 
 .header {
   width: 100%;
-  height: 44px;
+  height: 50px;
   margin-bottom: 16px;
+  position: relative;
+  z-index: 10;
 
   .header-content {
     background-color: #333;
-    padding: 10px 20px;
+    padding: 5px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-logo {
+    border-radius: 4px;
+    overflow: hidden;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 150px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 4px;
+      overflow: hidden;
+    }
   }
 
   .header-side-menu {
@@ -18,6 +37,16 @@
     left: 0;
     width: 100%;
     background-color: #333;
+    display: flex;
+
+    .header-logo {
+      margin: 0 auto;
+    }
+  }
+
+  .header-side-menu-wrapper-button {
+    position: absolute;
+    left: 0;
   }
 
   .header-side-menu-button {

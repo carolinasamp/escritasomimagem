@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
 import serverless from "serverless-http";
-import { RoutesURL } from "../routes";
+import { RoutesURL, SubRoutesURL } from "../routes";
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -13,10 +13,17 @@ const serveIndexHtml = (req: express.Request, res: express.Response) => {
 };
 
 app.get(RoutesURL.HOME, serveIndexHtml);
-app.get(RoutesURL.THEMATIC_AREAS, serveIndexHtml);
+
+app.get(SubRoutesURL.GENERAL_SCHEDULE, serveIndexHtml);
+app.get(SubRoutesURL.THEMED_TABLES, serveIndexHtml);
+
 app.get(RoutesURL.SPEAKERS, serveIndexHtml);
-app.get(RoutesURL.ORGANIZING_COMMITTEE, serveIndexHtml);
-app.get(RoutesURL.SCIENTIFIC_COMMITTEE, serveIndexHtml);
+app.get(RoutesURL.SHORT_COURSES, serveIndexHtml);
+
+app.get(SubRoutesURL.ORGANIZING_COMMITTEE, serveIndexHtml);
+app.get(SubRoutesURL.SCIENTIFIC_COMMITTEE, serveIndexHtml);
+
+app.get(RoutesURL.SERVICE, serveIndexHtml);
 
 app.get("*", serveIndexHtml);
 

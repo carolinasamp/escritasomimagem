@@ -3,7 +3,7 @@ import { facebook, gmail, instagram, youtube } from "../assets";
 export const SocialMediaList = [
   {
     social: "Youtube",
-    link: "https://www.youtube.com/grupointermidia",
+    link: "https://www.youtube.com/@grupointermidia",
     icon: youtube,
     text: "@grupointermidia",
   },

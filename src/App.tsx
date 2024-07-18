@@ -4,13 +4,13 @@ import Footer from "./modules/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import RouteInformation from "./routes";
 import Header from "./modules/Header";
-import SideMenu from "./components/SideMenu/SideMenu";
 import {
   useViewport,
   ViewportEnum,
   ViewportProvider,
 } from "./context/Viewport.context";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange";
 
 const App = () => {
   return (
@@ -27,13 +27,25 @@ const AppContent = () => {
 
   return (
     <section className={`main-content ${viewport.type}`}>
+      <ScrollToTopOnRouteChange />
       <Header viewport={viewport.type} />
+      {viewport?.type === ViewportEnum.DESKTOP && <Tabs />}
       <div className="container">
-        {viewport?.type === ViewportEnum.DESKTOP && <Tabs />}
         <Routes>
-          {RouteInformation.map((route, index) => (
-            <Route key={index} path={route.url} element={route.element} />
-          ))}
+          {RouteInformation.map((route, index) => {
+            const { url, element, subRoutes } = route;
+            return (
+              <Route key={index} path={url} element={element}>
+                {subRoutes?.map((subRoute, subIndex) => (
+                  <Route
+                    key={subIndex}
+                    path={subRoute.url}
+                    element={subRoute.element}
+                  />
+                ))}
+              </Route>
+            );
+          })}
         </Routes>
       </div>
       <Footer />

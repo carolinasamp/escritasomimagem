@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { organizers, supporters } from "./mapper";
-import ImageWithLoader from "../../components/ImageWithLoader";
+import ImageWithLoader from "../../components/LazyLoadImage";
 import "./style.scss";
 
 const Footer = () => {

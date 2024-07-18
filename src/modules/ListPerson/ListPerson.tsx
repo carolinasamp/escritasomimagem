@@ -1,29 +1,33 @@
 import { memo } from "react";
 import "./style.scss";
 import { ListPersonProps } from "./types";
-import ImageWithLoader from "../../components/ImageWithLoader";
+import LazyLoadImage from "../../components/LazyLoadImage";
 
-const ListPerson = ({ list }: ListPersonProps) => {
+const ListPerson = ({ list, className }: ListPersonProps) => {
   return (
-    <section className="list-person-container">
+    <div className="list-person-container">
       {list.map((person, index) => {
-        const { name, presentation, picture } = person;
+        const { name, presentation, details, picture } = person;
 
         return (
-          <figure key={index} className="person">
-            <ImageWithLoader
-              className="person-lazy-load"
-              src={picture}
-              alt={`Foto de ${name}`}
-            />
+          <div key={index} className={`person ${className || ""}`}>
+            {picture && <LazyLoadImage src={picture} alt={`Foto de ${name}`} />}
             <figcaption className="person-details">
               <h2 className="person-name">{name}</h2>
-              <p className="person-presentation">{presentation}</p>
+              <small className="person-presentation">{presentation}</small>
+              {details && (
+                <p className="person-details">
+                  <span
+                    className="person-details-content"
+                    dangerouslySetInnerHTML={{ __html: details }}
+                  />
+                </p>
+              )}
             </figcaption>
-          </figure>
+          </div>
         );
       })}
-    </section>
+    </div>
   );
 };
 
