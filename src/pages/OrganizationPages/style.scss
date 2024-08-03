@@ -1,0 +1,18 @@
+.esi-monitors {
+  .list-person-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .person {
+      flex: 1 1 calc(50% - 20px);
+      flex-direction: column;
+      margin: 0;
+
+      .lazyload-wrapper {
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

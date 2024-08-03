@@ -14,7 +14,9 @@ const ListPerson = ({ list, className }: ListPersonProps) => {
             {picture && <LazyLoadImage src={picture} alt={`Foto de ${name}`} />}
             <figcaption className="person-details">
               <h2 className="person-name">{name}</h2>
-              <small className="person-presentation">{presentation}</small>
+              {presentation && (
+                <small className="person-presentation">{presentation}</small>
+              )}
               {details && (
                 <p className="person-details">
                   <span

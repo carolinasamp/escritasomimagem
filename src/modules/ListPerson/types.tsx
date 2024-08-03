@@ -1,6 +1,6 @@
 type PersonType = {
   name: string;
-  presentation: string;
+  presentation?: string;
   picture?: string;
   details?: string;
 };

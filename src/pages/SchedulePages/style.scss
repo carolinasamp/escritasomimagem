@@ -1,0 +1,54 @@
+.esi-schedule-internal-tabs {
+  .internal-tabs-wrapper {
+    width: 80%;
+    align-self: flex-end;
+  }
+}
+
+.esi-music-programming {
+  .internal-tabs-content {
+    margin-top: 30px;
+  }
+
+  h1,
+  h2,
+  h3,
+  strong {
+    color: #333;
+  }
+
+  header,
+  section {
+    margin-bottom: 20px;
+  }
+
+  .details {
+    margin: 10px 0;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .intro,
+  .film-info,
+  .acknowledgments,
+  .credits {
+    margin-bottom: 20px;
+  }
+
+  .credits {
+    dt {
+      font-weight: bold;
+    }
+
+    dd {
+      margin: 0 0 10px 0;
+    }
+  }
+}

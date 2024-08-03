@@ -1,4 +1,8 @@
-import { bannerPrimary, Video1 } from "../../assets";
+import {
+  BackgroundSounds,
+  BannerPrimaryVideo,
+  MaterialidadeVideo,
+} from "../../assets";
 import LazyLoadVideo from "../../components/LazyLoadVideo";
 import NextPageBox from "../../modules/NextPageBox";
 import { RoutesURL, RoutesTitle } from "../../routes";
@@ -7,7 +11,20 @@ import "./style.scss";
 const Home = () => {
   return (
     <div className="esi-pages esi-home">
-      <img className="esi-home-primary-image" src={bannerPrimary} />
+      <section className="esi-home-banner-primary">
+        <h2>Sobre o conceito de materialidade assista:</h2>
+        <LazyLoadVideo
+          src={BannerPrimaryVideo}
+          controls={false}
+          autoPlay
+          loop
+        />
+      </section>
+      <audio autoPlay loop style={{ opacity: 0, pointerEvents: "none" }}>
+        <source src={BackgroundSounds} type="audio/mp3" />
+        Seu navegador não suporta a tag de áudio.
+      </audio>
+
       <section className="esi-home-presentation box">
         <p>
           O grupo de pesquisa{" "}
@@ -32,8 +49,11 @@ const Home = () => {
         </p>
       </section>
       <section className="esi-home-videos">
-        <h2>Vídeos</h2>
-        <LazyLoadVideo src={Video1} className="esi-home-videos-player" />
+        <h2>Sobre o conceito de materialidade assista:</h2>
+        <LazyLoadVideo
+          src={MaterialidadeVideo}
+          className="esi-home-videos-player"
+        />
       </section>
       <NextPageBox url={RoutesURL.SPEAKERS} title={RoutesTitle.SPEAKERS} />
     </div>

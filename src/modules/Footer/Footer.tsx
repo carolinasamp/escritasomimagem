@@ -1,40 +1,26 @@
 import { memo } from "react";
-import { organizers, supporters } from "./mapper";
 import ImageWithLoader from "../../components/LazyLoadImage";
 import "./style.scss";
+import { apoiadores, organizadores } from "../../assets";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-wrapper">
-        <div className="footer-column">
-          <h3>Organizadores</h3>
-          <ul>
-            {organizers.map((organizer, index) => {
-              const { src, alt } = organizer;
-
-              return (
-                <li key={index}>
-                  <ImageWithLoader {...{ src, alt }} />
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h3>Apoiadores</h3>
-          <ul>
-            {supporters.map((supporter, index) => {
-              const { src, alt } = supporter;
-
-              return (
-                <li key={index}>
-                  <ImageWithLoader key={index} {...{ src, alt }} />
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+      <div className="footer-column organizers">
+        <h3>Organizadores</h3>
+        <ImageWithLoader src={organizadores} alt="organizadores" />
+      </div>
+      <div className="footer-column supporters">
+        <h3>Apoiadores</h3>
+        <ImageWithLoader src={apoiadores} alt="apoiadores" />
+      </div>
+      <div className="footer-webdesigner">
+        <p>
+          Desenvolvidor por{" "}
+          <a href="https://github.com/carolinasamp" target="_blank">
+            Carolina Sampaio
+          </a>
+        </p>
       </div>
     </footer>
   );

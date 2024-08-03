@@ -2,7 +2,7 @@ import "./style.scss";
 import { useState, useEffect } from "react";
 import { InternalTabsProps } from "./types";
 
-const InternalTabs = ({ list }: InternalTabsProps) => {
+const InternalTabs = ({ list, className }: InternalTabsProps) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const getDateIndex = () => {
@@ -32,35 +32,37 @@ const InternalTabs = ({ list }: InternalTabsProps) => {
   };
 
   return (
-    <section className="internal-tabs">
-      <ul className="internal-tabs-wrapper">
-        {list.map((item, index) => {
-          const { tabName, id } = item;
-          const activeTab = activeIndex === index;
+    <section className={`internal-tabs ${className || ""}`}>
+      <div className="internal-tabs-scroll">
+        <ul className="internal-tabs-wrapper">
+          {list.map((item, index) => {
+            const { tabName, id } = item;
+            const activeTab = activeIndex === index;
 
+            return (
+              <li
+                key={id}
+                id={id}
+                className={`internal-tabs-item ${activeTab ? "active" : ""}`}
+                onClick={() => handleClick(index)}
+              >
+                <label className="internal-tabs-item-name">{tabName}</label>
+              </li>
+            );
+          })}
+        </ul>
+        {list.map((item, index) => {
+          const { id, content } = item;
+          const activeTab = activeIndex === index;
           return (
-            <li
-              key={id}
-              id={id}
-              className={`internal-tabs-item ${activeTab ? "active" : ""}`}
-              onClick={() => handleClick(index)}
-            >
-              <label className="internal-tabs-item-name">{tabName}</label>
-            </li>
+            activeTab && (
+              <div key={id} className="internal-tabs-content">
+                {content}
+              </div>
+            )
           );
         })}
-      </ul>
-      {list.map((item, index) => {
-        const { id, content } = item;
-        const activeTab = activeIndex === index;
-        return (
-          activeTab && (
-            <div key={id} className="internal-tabs-content">
-              {content}
-            </div>
-          )
-        );
-      })}
+      </div>
     </section>
   );
 };

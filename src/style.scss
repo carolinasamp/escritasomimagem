@@ -4,7 +4,8 @@
 body {
   color: $color-white;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(to bottom right, $color-base, $color-black);
+  // background: linear-gradient(to bottom right, $color-base, $color-black);
+  background: $color-black;
   height: 100%;
   width: 100%;
   min-height: 100vh;
@@ -44,6 +45,8 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 }
 

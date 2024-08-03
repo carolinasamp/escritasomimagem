@@ -1,3 +1,0 @@
-[build]
-  functions = "src/server"
-  publish = "dist"

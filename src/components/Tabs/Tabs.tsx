@@ -13,18 +13,14 @@ const Tabs = ({ className }: TabsProps) => {
 
   useEffect(() => {
     const currentPath = location.pathname;
-
-    // Find the index of the active tab based on the current route
     const foundIndex = RouteInformation.findIndex(
       (route) =>
         route.url === currentPath ||
         route.subRoutes?.some((subRoute) => subRoute.url === currentPath)
     );
 
-    // Update the active tab based on the route
     setActiveIndex(foundIndex !== -1 ? foundIndex : null);
 
-    // Close the hover state if the current path is a sub-route
     if (
       RouteInformation.some((route) =>
         route.subRoutes?.some((subRoute) => subRoute.url === currentPath)
@@ -56,44 +52,45 @@ const Tabs = ({ className }: TabsProps) => {
           const showSubTabs = shouldShowSubTabs(index);
 
           return (
-            <div
-              key={id}
-              {...{ id }}
-              id={id}
-              className={`tab-item ${isActive ? "active" : ""}`}
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-            >
-              {url ? (
-                <NavLink
-                  to={url}
-                  className={({ isActive }) =>
-                    `tab-link ${isActive ? "active" : ""}`
-                  }
-                  {...{ title }}
-                >
-                  {title}
-                </NavLink>
-              ) : (
-                <div className="tab-link">{title}</div>
-              )}
-              {subRoutes && showSubTabs && (
-                <div className={`sub-tabs ${showSubTabs ? "active" : ""}`}>
-                  {subRoutes.map((subRoute, subIndex) => (
-                    <NavLink
-                      key={subIndex}
-                      to={subRoute.url}
-                      className={({ isActive }) =>
-                        `sub-tab-link ${isActive ? "active" : ""}`
-                      }
-                      title={subRoute.title}
-                    >
-                      {subRoute.title}
-                    </NavLink>
-                  ))}
-                </div>
-              )}
-            </div>
+            title && (
+              <div
+                key={id}
+                {...{ id }}
+                className={`tab-item ${isActive ? "active" : ""}`}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+              >
+                {url ? (
+                  <NavLink
+                    to={url}
+                    className={({ isActive }) =>
+                      `tab-link ${isActive ? "active" : ""}`
+                    }
+                    {...{ title }}
+                  >
+                    {title}
+                  </NavLink>
+                ) : (
+                  <div className="tab-link">{title}</div>
+                )}
+                {subRoutes && showSubTabs && (
+                  <div className={`sub-tabs active`}>
+                    {subRoutes.map((subRoute, subIndex) => (
+                      <NavLink
+                        key={subIndex}
+                        to={subRoute.url}
+                        className={({ isActive }) =>
+                          `sub-tab-link ${isActive ? "active" : ""}`
+                        }
+                        title={subRoute.title}
+                      >
+                        {subRoute.title}
+                      </NavLink>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
           );
         })}
       </nav>

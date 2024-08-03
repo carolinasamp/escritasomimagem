@@ -5,9 +5,12 @@ import {
   ShortCourses,
   PreviousEdition,
 } from "../pages";
+import Monitors from "../pages/OrganizationPages/Monitors";
 import OrganizingCommittee from "../pages/OrganizationPages/OrganizingCommittee";
 import ScientificCommittee from "../pages/OrganizationPages/ScientificCommittee";
+import Secretary from "../pages/OrganizationPages/Secretary";
 import GeneralSchedule from "../pages/SchedulePages/GeneralSchedule";
+import MusicProgramming from "../pages/SchedulePages/MusicProgramming";
 import ThemedTable from "../pages/SchedulePages/ThemedTables";
 
 export enum RoutesURL {
@@ -31,15 +34,21 @@ export enum RoutesTitle {
 export enum SubRoutesURL {
   GENERAL_SCHEDULE = "/programacao-geral",
   THEMED_TABLES = "/mesas-tematicas",
+  MUSIC_PROGRAMMING = "/programacao-musical",
   ORGANIZING_COMMITTEE = "/comissao-organizadora",
   SCIENTIFIC_COMMITTEE = "/comite-cientifico",
+  SECRETARY = "/secretaria",
+  MONITORS = "/monitoras",
 }
 
 export enum SubRoutesTitle {
   GENERAL_SCHEDULE = "Programação Geral",
   THEMED_TABLES = "Mesas Temáticas",
+  MUSIC_PROGRAMMING = "Programação Musical",
   ORGANIZING_COMMITTEE = "Comissão Organizadora",
   SCIENTIFIC_COMMITTEE = "Comitê Científico",
+  SECRETARY = "Secretária",
+  MONITORS = "Monitoras",
 }
 
 export enum RoutesIDs {
@@ -55,8 +64,11 @@ export enum RoutesIDs {
 export enum SubRoutesIDs {
   GENERAL_SCHEDULE = "general-schedule",
   THEMED_TABLES = "themed-tables",
+  MUSIC_PROGRAMMING = "music-programming",
   ORGANIZING_COMMITTEE = "organizing-committee",
   SCIENTIFIC_COMMITTEE = "scientific-committee",
+  SECRETARY = "secretary",
+  MONITORS = "monitors",
 }
 
 const RouteInformation = [
@@ -81,6 +93,12 @@ const RouteInformation = [
         id: SubRoutesIDs.THEMED_TABLES,
         url: SubRoutesURL.THEMED_TABLES,
         element: <ThemedTable />,
+      },
+      {
+        title: SubRoutesTitle.MUSIC_PROGRAMMING,
+        id: SubRoutesIDs.MUSIC_PROGRAMMING,
+        url: SubRoutesURL.MUSIC_PROGRAMMING,
+        element: <MusicProgramming />,
       },
     ],
   },
@@ -111,6 +129,18 @@ const RouteInformation = [
         id: SubRoutesIDs.SCIENTIFIC_COMMITTEE,
         url: SubRoutesURL.SCIENTIFIC_COMMITTEE,
         element: <ScientificCommittee />,
+      },
+      {
+        title: SubRoutesTitle.SECRETARY,
+        id: SubRoutesIDs.SECRETARY,
+        url: SubRoutesURL.SECRETARY,
+        element: <Secretary />,
+      },
+      {
+        title: SubRoutesTitle.MONITORS,
+        id: SubRoutesIDs.MONITORS,
+        url: SubRoutesURL.MONITORS,
+        element: <Monitors />,
       },
     ],
   },

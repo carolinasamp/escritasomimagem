@@ -12,7 +12,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpe?g|gif|svg|mp4)$/i,
+        test: /\.(png|jpe?g|gif|svg|mp4|mp3)$/i,
         type: "asset/resource",
       },
       {

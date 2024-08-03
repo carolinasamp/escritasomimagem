@@ -8,6 +8,9 @@ interface LazyLoadVideoProps {
   className?: string;
   height?: number;
   offset?: number;
+  controls?: boolean;
+  autoPlay?: boolean;
+  loop?: boolean;
 }
 
 const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
@@ -15,6 +18,9 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
   className = "",
   height = 200,
   offset = 100,
+  controls = true,
+  autoPlay = false,
+  loop = false,
 }) => {
   const [loaded, setLoaded] = useState(false);
 
@@ -26,9 +32,11 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
     >
       {!loaded && <Placeholder />}
       <video
+        {...{ autoPlay, loop, controls }}
+        playsInline
         className="lazy-load-video"
+        muted={false}
         onLoad={() => setLoaded(true)}
-        controls
       >
         <source src={src} type="video/mp4" />
         Seu navegador não suporta a tag de vídeo.

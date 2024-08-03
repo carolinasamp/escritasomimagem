@@ -6,6 +6,7 @@ type ListItem = {
 
 type InternalTabsProps = {
   list: ListItem[];
+  className?: string;
 };
 
 export { InternalTabsProps, ListItem };

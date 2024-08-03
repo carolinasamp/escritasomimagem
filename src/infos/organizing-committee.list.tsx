@@ -8,7 +8,7 @@ import {
   MarcioVasconcellos,
   MiriamPaiva,
   RaquelBeatriz,
-  SandraCavalcante,
+  SandraMaria,
   ThaisFlores,
 } from "../assets";
 
@@ -61,7 +61,7 @@ export const OrganizingCommitteeList = [
   {
     name: "Sandra Maria Silva Cavalcante",
     presentation: "PPG Letras/ PUC Minas",
-    picture: SandraCavalcante,
+    picture: SandraMaria,
   },
   {
     name: "Thaïs Flores Nogueira Diniz",

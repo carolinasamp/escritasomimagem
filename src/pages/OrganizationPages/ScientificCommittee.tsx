@@ -1,7 +1,7 @@
 import { ScientificCommitteeList } from "../../infos/scientific-committee.list";
 import ListPerson from "../../modules/ListPerson";
 import NextPageBox from "../../modules/NextPageBox";
-import { RoutesURL, RoutesTitle } from "../../routes";
+import { SubRoutesURL, SubRoutesTitle } from "../../routes";
 
 const ScientificCommittee = () => {
   return (
@@ -13,7 +13,10 @@ const ScientificCommittee = () => {
         </div>
       </section>
 
-      <NextPageBox url={RoutesURL.SERVICE} title={RoutesTitle.SERVICE} />
+      <NextPageBox
+        url={SubRoutesURL.SECRETARY}
+        title={SubRoutesTitle.SECRETARY}
+      />
     </>
   );
 };

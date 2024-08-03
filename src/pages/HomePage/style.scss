@@ -23,8 +23,8 @@
 
   .lazyload-wrapper.esi-home-videos-player {
     margin-top: 8px;
-    height: 400px;
-    width: 225px;
+    height: auto;
+    max-width: 350px;
     display: flex;
     cursor: pointer;
     border-radius: 4px;

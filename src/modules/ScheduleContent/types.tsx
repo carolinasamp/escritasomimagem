@@ -1,11 +1,17 @@
-type ScheduleItemDetails = {
+type HoursColumn = {
   title: string;
-  description: string;
-  hour: string;
+  hours: string;
 };
 
-type ScheduleDetails = {
-  items: ScheduleItemDetails[];
-};
+interface ScheduleItem {
+  subtitle?: string;
+  description?: string;
+  element?: JSX.Element;
+}
 
-export { ScheduleDetails, ScheduleItemDetails };
+interface ScheduleContentProps {
+  items: ScheduleItem[];
+  hoursColumn?: HoursColumn[];
+}
+
+export { ScheduleContentProps, ScheduleItem, HoursColumn };

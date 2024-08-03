@@ -1,5 +1,5 @@
 import "./style.scss";
-import { SubRoutesTitle, SubRoutesURL } from "../../routes";
+import { RoutesTitle, SubRoutesTitle, SubRoutesURL } from "../../routes";
 import NextPageBox from "../../modules/NextPageBox";
 import { ShortCoursesInfo } from "../../infos/short-courses.list";
 import LazyLoadImage from "../../components/LazyLoadImage";
@@ -11,13 +11,17 @@ const ShortCourses = () => {
   return (
     <>
       {viewport.type === ViewportEnum.MOBILE && (
-        <h3 className="title-page">Minicursos</h3>
+        <h3 className="title-page">{RoutesTitle.SHORT_COURSES}</h3>
       )}
       <section className="esi-pages esi-short-courses box">
         <ol className="esi-short-courses-wrapper">
           {ShortCoursesInfo.map((shourtCouse, index) => {
-            const { title, taught_by, day_and_hour, content, images } =
-              shourtCouse;
+            const {
+              title,
+              day_and_hour,
+              content,
+              image: { alt, src },
+            } = shourtCouse;
 
             return (
               <li key={index} className="esi-short-courses-item">
@@ -25,24 +29,11 @@ const ShortCourses = () => {
                   <h3>
                     {index + 1}. {title}
                   </h3>
-                  {/* <b>Ministrada por: {taught_by}</b> */}
-                  <div className="esi-short-courses-wrapper-schedule-images">
+                  <div className="esi-short-courses-wrapper-schedule-image">
                     <b>{day_and_hour}</b>
-                    <div className="esi-short-courses-wrapper-images">
-                      {images.map((image, i) => {
-                        const { src, alt } = image;
-                        return (
-                          <div className="esi-short-courses-image" key={i}>
-                            <figure>
-                              <LazyLoadImage src={src} alt={`Foto de ${alt}`} />
-                            </figure>
-                            <small className="esi-short-courses-image-caption">
-                              {alt}
-                            </small>
-                          </div>
-                        );
-                      })}
-                    </div>
+                    <figure>
+                      <LazyLoadImage {...{ src, alt }} />
+                    </figure>
                   </div>
                   <div className="esi-short-courses-content-image">
                     <div dangerouslySetInnerHTML={{ __html: content }} />

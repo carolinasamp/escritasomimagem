@@ -3,7 +3,7 @@ import {
   Fernando,
   HernanUlm,
   JamesCisneros,
-  Leda,
+  RicardoAleixo,
   MarciaAberx,
   MarioCamara,
   Osvaldo,
@@ -37,10 +37,11 @@ export const SpeakersList = [
     details: `Professor de Estudos literários e culturais no Département de littératures et de langues du monde de la Université de Montréal, Canadá. Desde 2020, é o editor chefe da Revue Intermédialités : histoire et théorie des arts, des lettres et des techniques. Ele é membro do CRIalt (Centre de recherches intermédiales sur les arts, les lettres et les techniques) desde sua fundação. Atualmente, participa de vários projetos de pesquisa, incluindo "Mélancolie et nostalgie : histoires, médias, archives" (Conseil de recherches en sciences humaines, CRSH) e "Du politique dans l'usage des archives filmiques: enjeux contemporains de la production documentaire" (Conseil de recherches en sciences humaines, CRSH). Ele tem publicado sobre esses e outros assuntos relacionados em periódicos internacionais, e está concluindo um livro intitulado Remains to Be Seen. Media and Nostalgia in Contemporary Latin American Film.`,
   },
   {
-    name: "Leda Maria Martins",
+    name: "Ricardo Aleixo",
     presentation: "Universidade Federal de Minas Gerais",
-    picture: Leda,
-    details: `Poeta, ensaísta, dramaturga, professora. É doutora em Letras/Literatura Comparada pela Universidade Federal de Minas Gerais (UFMG), mestre em Artes pela Indiana University e formada em Letras pela UFMG. Possui pós-doutorados em Performance Studies pela New York University e em Performance e Rito pela Universidade Federal Fluminense (UFF). Leda é também Rainha de Nossa Senhora das Mercês da Irmandade de Nossa Senhora do Rosário no Jatobá, em Belo Horizonte. Em seu pensamento e proposições teóricas cruzam-se epistemologias e cosmovisões de várias matrizes cognitivas, como as derivadas dos saberes africanos transcriados nas Américas. Sua obra já foi tema dos simpósios Spiraling Time: Intermedial Conversations in Latin American Arts (Universidade da Califórnia, Berkeley, 2013) e Leda Maria Martins: Pensamentos e poéticas (Universidade de Brasília/Universidade Federal da Bahia, 2021). Entre os livros de sua autoria estão O moderno teatro de Qorpo-Santo (Ed. UFMG, 1991), A cena em sombras (Perspectiva, 1995), Afrografias da memória (Perspectiva, 1995) e Performances do tempo espiralar 2021. Em 2017, foi criado o Prêmio Leda Maria Martins de Artes Cênicas Negras.`,
+    picture: RicardoAleixo,
+    details:
+      "Belo-horizontino de 1960, o poeta, escritor, artista visual, designer sonoro e pesquisador de Literaturas, outras artes e mídias, Ricardo Aleixo recebeu da UFMG, em 2021, o título de Notório Saber, equivalente ao grau de doutor. Tem 20 livros publicados. Suas obras mesclam poesia, prosa ficcional, filosofia, etnopoética, antropologia, história, música, radioarte, artes visuais, vídeo, dança, teatro, performance e estudos urbanos. Já fez performances em quase todos os estados brasileiros e nos seguintes países: Argentina, Alemanha, Portugal, EUA, Espanha, México, França, Suíça e Angola. Participa da mostra permanente <i>Rua da Língua</i> (Museu da Língua Portuguesa/SP). Como artista visual, montou as mostras individuais <i>Objetos suspeitos</i> (1999, Belo Horizonte, Mariana e Rio de Janeiro) e <i><reProspectiva></i> (2015, Belo Horizonte) e participou de inúmeras coletivas, como <i>Portuñol/Portunhol</i>(2004, Buenos Aires, Argentina), <i>Gil70</i>(2012, São Paulo, Rio de Janeiro e Salvador), <i>Textos y Visualidades</i> (Buenos Aires, Argentina, 2019), <i>Carolina Maria de Jesus – Um Brasil Para os Brasileiros</i> (São Paulo, Sorocaba e Rio de Janeiro), <i>A Corda Mor</i>(2024, Coimbra, Portugal) e <i>Anozero`24 – O Fantasma da Liberdade</i> (2024, Coimbra). Apresentou, na 35ª Bienal de SP, o Ciclo de performances <i>Dendorí</i>. Atualmente, é professor visitante no Instituto de Letras da UFBA, em Salvador, e prepara-se para passar uma longa temporada em Nova York, onde atuará como pesquisador visitante no Departamento de Performance da NYU. Conquistou, em 2023, os prêmios Mestras e Mestres das Artes e Alceu Amoroso Lima – Poesia e Liberdade, outorgados, respectivamente, pela Funarte e por Universidade Candido Mendes/Centro Alceu Amoroso Lima Para a Liberdade, e foi finalista do Prêmio Oceanos, com o livro <i>Diário da encruza</i> (LIRA/Segundo Selo).",
   },
   {
     name: "Márcia Arbex",

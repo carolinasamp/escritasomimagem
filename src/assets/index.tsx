@@ -1,13 +1,6 @@
-import apoiador1 from "./apoiador1.png";
-import apoiador2 from "./apoiador2.png";
-import apoiador3 from "./apoiador3.png";
-import apoiador4 from "./apoiador4.png";
-import organizador1 from "./organizador1.png";
-import organizador2 from "./organizador2.png";
-import organizador3 from "./organizador3.png";
-import organizador4 from "./organizador4.png";
-import organizador5 from "./organizador5.png";
-import bannerPrimary from "./banner-primary.png";
+import apoiadores from "./apoiadores.png";
+import organizadores from "./organizadores.png";
+import banner_logo from "./banner-logo.png";
 import IrinaRagewsky from "./FOTO 1_IRINA RAJEWSKY.jpg";
 import ClausCluver from "./FOTO 2_CLAUS CLÜVER.jpg";
 import EduardoKacSolange from "./FOTO 3_EDUARDO KAC_SOLANGE RIBEIRO.jpg";
@@ -26,7 +19,7 @@ import Eckart from "./Eckart.png";
 import Fernando from "./Fernando.png";
 import HernanUlm from "./HernanUlm.png";
 import JamesCisneros from "./JamesCisneros.png";
-import Leda from "./Leda.png";
+import RicardoAleixo from "./RicardoAleixo.png";
 import MarciaAberx from "./MarciaAberx.png";
 import MarioCamara from "./MarioCamara.png";
 import Osvaldo from "./Osvaldo.png";
@@ -39,7 +32,7 @@ import ElianaLourenco from "./ElianaLourenco.png";
 import MarcioVasconcellos from "./MarcioVasconcellos.png";
 import MiriamPaiva from "./MiriamPaiva.png";
 import RaquelBeatriz from "./RaquelBeatriz.png";
-import SandraCavalcante from "./SandraCavalcante.png";
+import SandraMaria from "./SandraMaria.png";
 import ThaisFlores from "./ThaisFlores.png";
 import JoicySilva from "./JoicySilva.png";
 import BarbaraVitoria from "./BarbaraVitoria.png";
@@ -65,24 +58,28 @@ import ArrowDiagonal from "./ArrowDiagonal.icon";
 import AnchorIcon from "./Anchor.icon";
 
 // videos
-import Video1 from "./video-1.mp4";
+import MaterialidadeVideo from "./MATERIALIDADES.mp4";
+import BannerPrimaryVideo from "./banner-primary-video.mp4";
 
-//ebooks
+// sounds
+import BackgroundSounds from "./background-sound.mp3";
+
+// ebooks
 import EBOOK_1 from "./EBOOK_1.png";
 import EBOOK_2 from "./EBOOK_2.png";
 import EBOOK_3 from "./EBOOK_3.png";
 
+// minicursos
+import MINICURSO_1 from "./MINICURSO_1.jpg";
+import MINICURSO_2 from "./MINICURSO_2.jpg";
+import MINICURSO_3 from "./MINICURSO_3.jpg";
+import MINICURSO_4 from "./MINICURSO_4.jpg";
+import MINICURSO_5 from "./MINICURSO_5.jpg";
+
 export {
-  apoiador1,
-  apoiador2,
-  apoiador3,
-  apoiador4,
-  organizador1,
-  organizador2,
-  organizador3,
-  organizador4,
-  organizador5,
-  bannerPrimary,
+  apoiadores,
+  organizadores,
+  banner_logo,
   facebook,
   instagram,
   youtube,
@@ -91,7 +88,7 @@ export {
   Fernando,
   HernanUlm,
   JamesCisneros,
-  Leda,
+  RicardoAleixo,
   MarciaAberx,
   MarioCamara,
   Osvaldo,
@@ -102,7 +99,9 @@ export {
   ArrowTabs,
   ArrowDiagonal,
   AnchorIcon,
-  Video1,
+  MaterialidadeVideo,
+  BannerPrimaryVideo,
+  BackgroundSounds,
   IrinaRagewsky,
   ClausCluver,
   EduardoKacSolange,
@@ -119,7 +118,7 @@ export {
   MarcioVasconcellos,
   MiriamPaiva,
   RaquelBeatriz,
-  SandraCavalcante,
+  SandraMaria,
   ThaisFlores,
   CeciliaNazare,
   JoicySilva,
@@ -136,4 +135,9 @@ export {
   RicardoOliveira,
   AnaLea,
   CarolinaFedatto,
+  MINICURSO_1,
+  MINICURSO_2,
+  MINICURSO_3,
+  MINICURSO_4,
+  MINICURSO_5,
 };

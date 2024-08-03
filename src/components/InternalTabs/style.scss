@@ -3,13 +3,20 @@
 .internal-tabs {
   width: 100%;
   border-radius: 4px;
-  overflow: hidden;
+  // overflow: hidden;
+
+  .internal-tabs-scroll {
+    display: flex;
+    flex-direction: column;
+  }
 
   .internal-tabs-wrapper {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
 
     .internal-tabs-item {
       flex: 1;
@@ -41,8 +48,20 @@
   }
 
   .internal-tabs-content {
-    padding: 1rem;
     background-color: $color-white;
     color: #333;
+    border-radius: 4px 0 4px 4px;
+    overflow: hidden;
   }
 }
+
+// @media (max-width: $tablet) {
+//   .internal-tabs {
+//     overflow: hidden;
+
+//     .internal-tabs-scroll {
+//       width: 600px;
+//       overflow-x: auto;
+//     }
+//   }
+// }
