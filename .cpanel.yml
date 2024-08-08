@@ -1,0 +1,8 @@
+deployment:
+  branch: main
+  commands:
+    - echo "Iniciando o processo de implantação..."
+      - git pull origin main
+      - npm install
+      - npm run build
+      - echo "Implantação concluída com sucesso."
