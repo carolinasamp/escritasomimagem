@@ -1,8 +1,5 @@
-import {
-  BackgroundSounds,
-  BannerPrimaryVideo,
-  MaterialidadeVideo,
-} from "../../assets";
+import { AnchorIcon, imageUrls } from "../../assets";
+import LazyLoadImage from "../../components/LazyLoadImage";
 import LazyLoadVideo from "../../components/LazyLoadVideo";
 import NextPageBox from "../../modules/NextPageBox";
 import { RoutesURL, RoutesTitle } from "../../routes";
@@ -12,19 +9,8 @@ const Home = () => {
   return (
     <div className="esi-pages esi-home">
       <section className="esi-home-banner-primary">
-        <h2>Sobre o conceito de materialidade assista:</h2>
-        <LazyLoadVideo
-          src={BannerPrimaryVideo}
-          controls={false}
-          autoPlay
-          loop
-        />
+        <LazyLoadVideo src={imageUrls.BannerPrimaryVideo} autoPlay loop muted />
       </section>
-      <audio autoPlay loop style={{ opacity: 0, pointerEvents: "none" }}>
-        <source src={BackgroundSounds} type="audio/mp3" />
-        Seu navegador não suporta a tag de áudio.
-      </audio>
-
       <section className="esi-home-presentation box">
         <p>
           O grupo de pesquisa{" "}
@@ -47,13 +33,43 @@ const Home = () => {
           copresença, interação, transferência, circulação, entre outras, se
           constitui na sua própria condição de existência.
         </p>
+
+        <a
+          className="esi-home-presentation-link"
+          target="_blank"
+          href="https://www.even3.com.br/escritasomimagem4/"
+        >
+          Para se inscrever como ouvinte, clique aqui <AnchorIcon />
+        </a>
       </section>
       <section className="esi-home-videos">
-        <h2>Sobre o conceito de materialidade assista:</h2>
+        <figure className="esi-home-image-with-text">
+          <div className="esi-home-image-text">
+            <p>Sobre o conceito de Materialidade, assista à</p>
+            <h2>Capsula Intermídia</h2>
+          </div>
+          <LazyLoadImage src={imageUrls.Background} alt="Background padrão" />
+        </figure>
         <LazyLoadVideo
-          src={MaterialidadeVideo}
+          src={imageUrls.MaterialidadeVideo}
           className="esi-home-videos-player"
         />
+      </section>
+      <section className="esi-home-images">
+        <figure className="esi-home-image-with-text">
+          <div className="esi-home-image-text">
+            <p>
+              Os convidados internacionais do{" "}
+              <i>IV Colóquio internacional escrita, som, imagem</i> também
+              realizarão as seguintes atividades antes do início do evento:{" "}
+            </p>
+          </div>
+          <LazyLoadImage src={imageUrls.Background} alt="Background padrão" />
+        </figure>
+        <div className="esi-home-images-wrapper">
+          <LazyLoadImage src={imageUrls.Evento1} alt="Evento 1" />
+          <LazyLoadImage src={imageUrls.Evento2} alt="Evento 2" />
+        </div>
       </section>
       <NextPageBox url={RoutesURL.SPEAKERS} title={RoutesTitle.SPEAKERS} />
     </div>

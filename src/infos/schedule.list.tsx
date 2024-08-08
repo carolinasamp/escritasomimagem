@@ -2,12 +2,11 @@ import ScheduleContent from "../modules/ScheduleContent";
 import { ShortCoursesInfo } from "./short-courses.list";
 
 const ScheduleTuesday = [
-  { description: "" },
   {
     subtitle: ShortCoursesInfo[0].title,
     description: ShortCoursesInfo[0].speakers,
   },
-  { description: "" },
+  { subtitle: "Abertura" },
   {
     subtitle: "A voz do poeta ingénuo na era da técnica",
     description: "Osvaldo Silvestre (Universidade de Coimbra, Portugal)",
@@ -24,7 +23,17 @@ const ScheduleWednesday = [
     description: "",
   },
   {
-    description: "",
+    description: `
+    <ul>
+    <li>Mesa 1 - Escritas em Expansão</li>
+    <li>Mesa 2 - Fotografia e Literatura</li>
+    <li>Mesa 3 - Quadrinhos e Romances Gráficos</li>
+    <li>Mesa 4 - Intermidialidade: Provocações Conceituais</li>
+    <li>Mesa 5 - Instapoesia, Booktok e Audiolivro</li>
+    <li>Mesa 6 - Pensar a MPB</li>
+    <li>Mesa 7 - Estudos de Adaptação</li>
+    <li>Mesa 8 - Políticas das Imagens em Movimento</li>
+    </ul>`,
   },
   {
     subtitle: ShortCoursesInfo[0].title,
@@ -34,7 +43,18 @@ const ScheduleWednesday = [
     description: "",
   },
   {
-    description: "",
+    description: `
+    <ul>
+    <li>Mesa 9 - Pensar a Edição</li>
+    <li>Mesa 10 - Palavra, Imagem, Narrativa</li>
+    <li>Mesa 11 - Arqueologias da Escrita e da Imagem</li>
+    <li>Mesa 12 - Escrever, desenhar, editar</li>
+    <li>Mesa 13 - Ritmo e Poesia</li>
+    <li>Mesa 14 - Autopublicação no Mundo Digital</li>
+    <li>Mesa 15 - Políticas das Adaptações de Jane Austen</li>
+    <li>Mesa 16 - Drama em Cena</li>
+    <li>Mesa 17 - Multimodalidade e ensino</li>
+    </ul>`,
   },
   {
     subtitle: ShortCoursesInfo[1].title,
@@ -51,6 +71,7 @@ const ScheduleWednesday = [
     </div>
     <br />
     <div>
+    <b>Intermedialidade antes da palavra: Arte total em África e na Afro-Diáspora</b>
     <p>Ricardo Aleixo (Poeta, músico, artista multimídia, performer, produtor cultural)</p>
     </div>
     `,
@@ -69,7 +90,18 @@ const ScheduleThursday = [
     description: "",
   },
   {
-    description: "",
+    description: `
+    <ul>
+    <li>Mesa 18 - Políticas das imagens</li>
+    <li>Mesa 19 - Poéticas Digitais</li>
+    <li>Mesa 20 - Quadrinhos, Charges e Caricaturas</li>
+    <li>Mesa 21 - Grafias de Luz</li>
+    <li>Mesa 22 - O Som no Signo</li>
+    <li>Mesa 23 - Poderes do Som</li>
+    <li>Mesa 24 - Cordéis e Ilumiaras</li>
+    <li>Mesa 25 - Corpo, Experiência e Picturalidade na Poesia de Ana Martins Marques</li>
+    <li>Mesa 26 - Escrita e Montagem</li>
+    </ul>`,
   },
   {
     subtitle: ShortCoursesInfo[2].title,
@@ -79,7 +111,18 @@ const ScheduleThursday = [
     description: "",
   },
   {
-    description: "",
+    description: `
+    <ul>
+    <li>Mesa 27 - Arqueologia dos Sentidos</li>
+    <li>Mesa 28 - Materialidades Fílmicas</li>
+    <li>Mesa 29 - Práticas Editoriais</li>
+    <li>Mesa 30 - Poéticas e Plásticas da Escrita</li>
+    <li>Mesa 31 - Poesia e Tecnologia</li>
+    <li>Mesa 32 - Afinidades Eletivas: Música, Pintura, Literatura</li>
+    <li>Mesa 33 - Palavra, Imagem, Visualidade</li>
+    <li>Mesa 34 - Transmidiações</li>
+    <li>Mesa 35 - Pensar as Mídias no Ensino</li>
+    </ul>`,
   },
   {
     subtitle: ShortCoursesInfo[1].title,
@@ -121,7 +164,17 @@ const ScheduleFriday = [
     description: "",
   },
   {
-    description: "",
+    description: `
+    <ul>
+    <li>Mesa 36 - Materialidades nas Artes, na Literatura e no Teatro</li>
+    <li>Mesa 37 - Políticas dos Suportes</li>
+    <li>Mesa 38 - Ouvindo Vozes</li>
+    <li>Mesa 39 - Cinema de Sensações</li>
+    <li>Mesa 40 - Lendo Ambiências</li>
+    <li>Mesa 41 - Materialidades dos Suportes</li>
+    <li>Mesa 42 - Dimensões do Ritmo</li>
+    <li>Mesa 43 - Game Studies, Mangás e Animações</li>
+    </ul>`,
   },
   {
     subtitle: ShortCoursesInfo[3].title,
@@ -131,7 +184,20 @@ const ScheduleFriday = [
     description: "",
   },
   {
-    description: "",
+    description: `
+    <ul>
+    <li>Mesa 44 - Novos Materialismos, Outras Ontologias</li>
+    <li>Mesa 45 - Nas Tramas das Letras: Tradução, Tecelagem, Ilustração</li>
+    <li>Mesa 46 - Adaptação, Transposição, Transmidiação</li>
+    <li>Mesa 47 - Literatura e Digitalidade</li>
+    <li>Mesa 48 - Artes Gráficas</li>
+    <li>Mesa 49 - Corpos que Importam</li>
+    <li>Mesa 50 - Regimes de Escuta</li>
+    <li>Mesa 51 - Pensar a Écfrase</li>
+    <li>Mesa 52 - Pensar a Colagem</li>
+    <li>Mesa 53 - O Som na Literatura</li>
+    <li>Mesa 54 - Memória, Ruínas e Experiência Urbana</li>
+    </ul>`,
   },
   {
     subtitle: ShortCoursesInfo[4].title,
@@ -164,20 +230,16 @@ const ScheduleList = [
         items={ScheduleTuesday}
         hoursColumn={[
           {
-            title: "Simpósio temático",
-            hours: "11h - 12:30",
-          },
-          {
             title: "Minicurso 1",
-            hours: "11h - 12:30",
-          },
-          {
-            title: "Materialidades da voz",
-            hours: "16h - 18h",
+            hours: "10:40 - 12:20",
           },
           {
             title: "",
-            hours: "18h - 19h",
+            hours: "18h - 18:20",
+          },
+          {
+            title: "Materialidades da voz",
+            hours: "18:20 - 20h",
           },
         ]}
       />
@@ -199,7 +261,7 @@ const ScheduleList = [
             hours: "10:30 - 11h",
           },
           {
-            title: "Simpósio temático",
+            title: "Mesas Temáticas",
             hours: "11h - 12:30",
           },
           {
@@ -211,7 +273,7 @@ const ScheduleList = [
             hours: "12:30 - 14h",
           },
           {
-            title: "Simpósio temático",
+            title: "Mesas Temáticas",
             hours: "14h - 15:30",
           },
           {
@@ -227,7 +289,7 @@ const ScheduleList = [
             hours: "16h - 18h",
           },
           {
-            title: "Reverberações sonoras",
+            title: "Programação musical",
             hours: "18h - 19h",
           },
         ]}
@@ -250,7 +312,7 @@ const ScheduleList = [
             hours: "10:30 - 11h",
           },
           {
-            title: "Simpósio temático",
+            title: "Mesas Temáticas",
             hours: "11h - 12:30",
           },
           {
@@ -262,7 +324,7 @@ const ScheduleList = [
             hours: "12:30 - 14h",
           },
           {
-            title: "Simpósio temático",
+            title: "Mesas Temáticas",
             hours: "14h - 15:30",
           },
           {
@@ -282,7 +344,7 @@ const ScheduleList = [
             hours: "16h - 18h",
           },
           {
-            title: "Reverberações sonoras",
+            title: "Programação musical",
             hours: "18h - 19h",
           },
         ]}
@@ -305,7 +367,7 @@ const ScheduleList = [
             hours: "10:30 - 11h",
           },
           {
-            title: "Simpósio temático",
+            title: "Mesas Temáticas",
             hours: "11h - 12:30",
           },
           {
@@ -317,12 +379,12 @@ const ScheduleList = [
             hours: "12:30 - 14h",
           },
           {
-            title: "Simpósio temático",
+            title: "Mesas Temáticas",
             hours: "14h - 15:30",
           },
           {
             title: "Minicurso 5",
-            hours: "14h - 15:30",
+            hours: "13h - 16h",
           },
           {
             title: "Coffee Break",

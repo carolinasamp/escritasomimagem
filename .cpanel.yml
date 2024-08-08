@@ -1,0 +1,6 @@
+deployment:
+  build:
+    - npm install
+    - npm run build
+  post_deploy:
+    - cp -r dist/* /public_html/

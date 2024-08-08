@@ -19,7 +19,7 @@ export const ScientificCommitteeList = [
     name: "Cristine Fickelscherer",
     presentation: "Universidade Presbiteriana Mackenzie",
   },
-  { name: "Daniella Libânio", presentation: "UEMG" },
+  { name: "Daniella Carneiro Libânio de Almada", presentation: "UFMG" },
   { name: "Eliana Lourenço de Lima Reis", presentation: "UFMG" },
   { name: "Erika Viviana Costa Vieira", presentation: "UFVJM" },
   { name: "Erick Felinto", presentation: "UERJ" },

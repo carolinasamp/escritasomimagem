@@ -11,7 +11,7 @@ import ScientificCommittee from "../pages/OrganizationPages/ScientificCommittee"
 import Secretary from "../pages/OrganizationPages/Secretary";
 import GeneralSchedule from "../pages/SchedulePages/GeneralSchedule";
 import MusicProgramming from "../pages/SchedulePages/MusicProgramming";
-import ThemedTable from "../pages/SchedulePages/ThemedTables";
+import ThemedTable from "../pages/SchedulePages/ThemedTables/ThemedTables";
 
 export enum RoutesURL {
   HOME = "/",
@@ -27,7 +27,7 @@ export enum RoutesTitle {
   SPEAKERS = "Conferencistas",
   SHORT_COURSES = "Minicursos",
   ORGANIZATION = "Organização",
-  SERVICE = "Serviço",
+  SERVICE = "Como chegar/Onde ficar",
   PREVIOUS_EDITION = "Edições anteriores",
 }
 

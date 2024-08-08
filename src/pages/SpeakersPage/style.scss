@@ -6,6 +6,14 @@
 
     .lazyload-wrapper {
       margin: 0 0 16px;
+      align-self: center;
+    }
+
+    .person-details {
+      .person-name,
+      .person-presentation {
+        text-align: center;
+      }
     }
   }
 }

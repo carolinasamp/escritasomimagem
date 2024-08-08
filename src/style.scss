@@ -4,7 +4,6 @@
 body {
   color: $color-white;
   font-family: "Montserrat", sans-serif;
-  // background: linear-gradient(to bottom right, $color-base, $color-black);
   background: $color-black;
   height: 100%;
   width: 100%;
@@ -44,7 +43,6 @@ body {
   > section {
     position: relative;
     display: flex;
-    flex-direction: column;
     box-sizing: border-box;
     overflow: hidden;
   }
@@ -84,6 +82,18 @@ li::marker {
 
     .box {
       padding: 20px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .main-content {
+    .container {
+      margin: 30px 8px 8px 8px;
+      width: calc(100% - 8px * 2);
+    }
+    .box {
+      padding: 8px;
     }
   }
 }

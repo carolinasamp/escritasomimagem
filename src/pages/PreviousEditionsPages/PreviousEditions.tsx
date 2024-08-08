@@ -1,5 +1,7 @@
+import LazyLoadImage from "../../components/LazyLoadImage";
 import { useViewport, ViewportEnum } from "../../context/Viewport.context";
 import { PreviousEditionInfo } from "../../infos/previous-editions.list";
+import { RoutesTitle } from "../../routes";
 import "./style.scss";
 
 const PreviousEdition = () => {
@@ -8,7 +10,7 @@ const PreviousEdition = () => {
   return (
     <>
       {viewport.type === ViewportEnum.MOBILE && (
-        <h3 className="title-page">Edições anteriores</h3>
+        <h3 className="title-page">{RoutesTitle.PREVIOUS_EDITION}</h3>
       )}
       <section className="esi-pages esi-previous-edition box">
         {PreviousEditionInfo.map((item, index) => {
@@ -25,7 +27,8 @@ const PreviousEdition = () => {
                       key={indexImage}
                       className="esi-previous-edition-image-content"
                     >
-                      <img {...{ src, alt }} />
+                      <LazyLoadImage {...{ src, alt }} />
+                      <caption>{alt}</caption>
                       {link && (
                         <a href={link} target="_blank">
                           Baixar

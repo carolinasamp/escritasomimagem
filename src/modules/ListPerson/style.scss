@@ -21,6 +21,11 @@
     }
   }
 
+  .person-image-caption {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
   .lazyload-wrapper {
     min-width: 150px;
     min-height: 150px;
@@ -58,7 +63,11 @@
     justify-content: flex-start;
   }
 
-  .person-details-content a {
-    color: #f7931e;
+  .person-details-content {
+    text-align: justify;
+
+    a {
+      color: #f7931e;
+    }
   }
 }

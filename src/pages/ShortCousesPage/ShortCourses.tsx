@@ -4,6 +4,7 @@ import NextPageBox from "../../modules/NextPageBox";
 import { ShortCoursesInfo } from "../../infos/short-courses.list";
 import LazyLoadImage from "../../components/LazyLoadImage";
 import { useViewport, ViewportEnum } from "../../context/Viewport.context";
+import ListPerson from "../../modules/ListPerson/ListPerson";
 
 const ShortCourses = () => {
   const viewport = useViewport();
@@ -20,6 +21,7 @@ const ShortCourses = () => {
               title,
               day_and_hour,
               content,
+              minibios,
               image: { alt, src },
             } = shourtCouse;
 
@@ -30,7 +32,7 @@ const ShortCourses = () => {
                     {index + 1}. {title}
                   </h3>
                   <div className="esi-short-courses-wrapper-schedule-image">
-                    <b>{day_and_hour}</b>
+                    <b dangerouslySetInnerHTML={{ __html: day_and_hour }} />
                     <figure>
                       <LazyLoadImage {...{ src, alt }} />
                     </figure>
@@ -38,6 +40,11 @@ const ShortCourses = () => {
                   <div className="esi-short-courses-content-image">
                     <div dangerouslySetInnerHTML={{ __html: content }} />
                   </div>
+                  {minibios && (
+                    <div className="esi-short-courses-minibios">
+                      <ListPerson list={minibios} />
+                    </div>
+                  )}
                 </div>
               </li>
             );

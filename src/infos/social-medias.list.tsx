@@ -1,28 +1,28 @@
-import { facebook, gmail, instagram, youtube } from "../assets";
+import { imageUrls } from "../assets";
 
 export const SocialMediaList = [
   {
     social: "Youtube",
     link: "https://www.youtube.com/@grupointermidia",
-    icon: youtube,
+    icon: imageUrls.youtube,
     text: "@grupointermidia",
   },
   {
     social: "Facebook",
     link: "https://www.facebook.com/grupoestudosintermidia",
-    icon: facebook,
+    icon: imageUrls.facebook,
     text: "grupointermidia",
   },
   {
     social: "Instagram",
     link: "https://www.instagram.com/grupointermidia",
-    icon: instagram,
+    icon: imageUrls.instagram,
     text: "@grupointermidia",
   },
   {
     social: "Gmail",
     link: "mailto:escritasomimagem4@gmail.com",
-    icon: gmail,
+    icon: imageUrls.gmail,
     text: "escritasomimagem4@gmail.com",
   },
 ];

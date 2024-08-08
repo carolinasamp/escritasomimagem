@@ -31,22 +31,55 @@
     }
   }
 
+  .header-button.header-button-menu {
+    left: 0;
+    right: inherit;
+  }
+
+  .header-button.header-button-desktop {
+    position: relative;
+  }
+
+  .header-button {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 100%;
+
+    button {
+      background: transparent;
+      outline: none;
+      border: 0;
+      cursor: pointer;
+
+      &:hover {
+        svg {
+          stroke: $color-orange-2;
+          fill: $color-orange-2;
+        }
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        stroke: $color-orange;
+        fill: $color-orange;
+      }
+    }
+  }
+
   .header-side-menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+
     background-color: #333;
     display: flex;
 
     .header-logo {
       margin: 0 auto;
     }
-  }
-
-  .header-side-menu-wrapper-button {
-    position: absolute;
-    left: 0;
   }
 
   .header-side-menu-button {

@@ -3,6 +3,40 @@
 .esi-service {
   margin-bottom: 45px;
 
+  &-image {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+
+    caption {
+      margin-top: 4px;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+
+  .internal-tabs .internal-tabs-wrapper {
+    border-radius: 4px;
+  }
+
+  .internal-tabs-content {
+    margin-top: 16px;
+
+    .esi-service-list-recommendations {
+      p {
+        margin: 0;
+      }
+
+      li {
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
   &-content {
     margin-bottom: 32px;
 

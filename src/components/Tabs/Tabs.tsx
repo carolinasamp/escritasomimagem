@@ -2,7 +2,6 @@ import { NavLink, useLocation } from "react-router-dom";
 import "./style.scss";
 import RouteInformation from "../../routes";
 import { TabsProps } from "./types";
-import { ArrowTabs } from "../../assets";
 import { useState, useEffect, useRef } from "react";
 
 const Tabs = ({ className }: TabsProps) => {

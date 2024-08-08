@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import LazyLoad from "react-lazyload";
 import "./style.scss";
 import Placeholder from "../Placeholder";
@@ -11,6 +11,7 @@ interface LazyLoadVideoProps {
   controls?: boolean;
   autoPlay?: boolean;
   loop?: boolean;
+  muted?: boolean;
 }
 
 const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
@@ -21,8 +22,10 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
   controls = true,
   autoPlay = false,
   loop = false,
+  muted = false,
 }) => {
-  const [loaded, setLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const refVideo = useRef<HTMLVideoElement>(null);
 
   return (
     <LazyLoad
@@ -30,13 +33,15 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
       once
       placeholder={<Placeholder />}
     >
-      {!loaded && <Placeholder />}
+      {!isLoaded && <Placeholder />}
       <video
-        {...{ autoPlay, loop, controls }}
-        playsInline
+        {...{ autoPlay, loop, controls, muted }}
+        ref={refVideo}
+        preload="auto"
         className="lazy-load-video"
-        muted={false}
-        onLoad={() => setLoaded(true)}
+        onCanPlay={() => setIsLoaded(true)}
+        disablePictureInPicture={false}
+        style={{ opacity: isLoaded ? 1 : 0 }}
       >
         <source src={src} type="video/mp4" />
         Seu navegador não suporta a tag de vídeo.

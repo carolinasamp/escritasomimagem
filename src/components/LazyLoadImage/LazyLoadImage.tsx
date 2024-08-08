@@ -4,11 +4,11 @@ import { LazyLoadImageProps } from "./types";
 import Placeholder from "../Placeholder";
 import "./style.scss";
 
-const LazyLoadImage = ({ src, alt }: LazyLoadImageProps) => {
+const LazyLoadImage = ({ src, alt, className }: LazyLoadImageProps) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <LazyLoad placeholder={<Placeholder />} once>
+    <LazyLoad placeholder={<Placeholder />} once className={className || ""}>
       {!loaded && <Placeholder />}
       <img
         src={src}

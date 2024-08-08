@@ -14,9 +14,22 @@
       margin: 8px 0;
 
       b {
-        font-size: 20px;
+        font-size: 22px;
         width: 30%;
         text-align: left;
+
+        > div {
+          border-bottom: 2px solid $color-orange;
+          margin-bottom: 8px;
+          padding-bottom: 8px;
+          width: fit-content;
+
+          &:last-child {
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
       }
     }
   }
@@ -64,6 +77,10 @@
       margin-top: 8px;
       text-indent: 4em;
     }
+  }
+
+  &-minibios {
+    margin-top: 16px;
   }
 }
 

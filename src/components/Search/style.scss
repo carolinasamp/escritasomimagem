@@ -2,7 +2,6 @@
 
 .search-container {
   position: relative;
-  width: 100%;
   justify-content: right;
   display: flex;
   width: 300px;
@@ -34,5 +33,11 @@
 
   &:hover {
     color: $color-orange;
+  }
+}
+
+@media (max-width: $tablet) {
+  .search-container {
+    width: 100%;
   }
 }

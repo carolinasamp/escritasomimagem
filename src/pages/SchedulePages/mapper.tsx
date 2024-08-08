@@ -1,6 +1,89 @@
+import { imageUrls } from "../../assets";
+import LazyLoadImage from "../../components/LazyLoadImage";
+import ListPeople from "../../modules/ListPerson";
+import { PersonType } from "../../modules/ListPerson/types";
+
+const MusicsInfoPresentation1: PersonType[] = [
+  {
+    name: "Caroline Peres",
+    picture: imageUrls.CarolinaPeres,
+    details:
+      "Natural de Porto Alegre, Rio Grande do Sul, bacharel em Canto lírico pela Universidade Federal de Pelotas–RS, mestre e doutoranda em Música na linha de pesquisa Performance Musical pela Universidade Federal de Minas Gerais, sob a orientação da Profa. Dra. Ana Cláudia Assis e coorientação da Profa. Dra. Cecília Nazaré de Lima. Sua pesquisa se desenvolve sobre questões identitárias regionais na canção de Câmara produzida no Rio Grande do Sul na primeira metade do século XX. Atualmente é professora substituta do curso de Bacharelado em Música – Canto, na Universidade Federal de Pelotas.",
+  },
+  {
+    name: "Hélcio Vaz",
+    picture: imageUrls.HelcioVaz,
+    details:
+      "Natural de Belo Horizonte-MG, graduou-se em piano pela Escola de Música da UFMG, na classe do prof. Miguel Rosselini, e é mestre em Performance Musical pela mesma instituição, orientado pela profa. Guida Borghoff. É detentor de diversos prêmios em concursos nacionais de piano, e participou dos festivais “Música nas Montanhas”, em Poços de Caldas (2005), FEMUSC, em Jaraguá do Sul (2007 e 2008), Semana da música de Ouro Branco (2007) e Semana de Música Antiga da UFMG (2007 e 2009). Helcio tem atuado como recitalista e camerista em Belo Horizonte e interior do estado, e, atualmente, é organista da Igreja de São Sebastião, em Belo Horizonte, pianista do Madrigal Concentus e pianista correpetidor da Escola de Música da UFMG.",
+  },
+  {
+    name: "Frederico Richter (1932-2023)",
+    picture: "",
+    details:
+      "Natural de Novo Hamburgo, Rio Grande do Sul, iniciou os seus estudos musicais ainda na infância. Estudou na Universidade Federal do Rio Grande do Sul e obteve o doutorado em 1962. Entre os anos de 1979 e 1981, realizou pós-doutorado na McGilll University, no Canadá. Richter adotou o cognome de Frerídio, pelo qual é conhecido na área musical. Foi professor da Universidade Federal de Santa Maria por 33 anos, dedicou-se à música moderna e pós-moderna, e foi o introdutor da música eletrônica no Rio Grande do Sul. ",
+  },
+];
+
+const MusicsInfoPresentation2: PersonType[] = [
+  {
+    name: "Fernando Rocha",
+    picture: imageUrls.FernandoRocha,
+    details:
+      "Professor de percussão da UFMG, formado pela UNESP, com Mestrado pela UFMG, Doutorado pela McGill University (Canadá) e Pós-Doutorado pela Universidade da Virgínia (EUA). Como intérprete de música contemporânea, estreou mais de 50 obras, colaborando com compositores como Douglas Boyce, Lewis Nielson (EUA), Almeida Prado, Silvio Ferraz, Roberto Victorio, Sérgio Freire, Maurício de Bonnis, Maurício Dottori, Sérgio Rodrigo, Alexandre Lunsqui (Brasil), Nicolas Gilbert, Brian Cherney, Geof Holbrook (Canadá), João Pedro Oliveira (Portugal) e Daniel Blinkhorn (Austrália). Já se apresentou nos mais importantes festivais de música do Brasil e também na Argentina, Chile, Uruguai, EUA, Portugal, França, Alemanha e Canadá. Seu trabalho contínuo em música de câmara inclui sua participação no grupo Plurisons, no Duo Qattus (com a celista Elise Pittenger) e no grupo Tectum (percussão e eletrônica). Ele também é diretor do grupo Sonante 21 (ligado ao programa de Pós-Graduação da UFMG) e fundador do Grupo de Percussão da UFMG. Fernando Rocha tem se dedicado a curadoria de eventos de música e, atualmente, é diretor do Conservatório UFMG.",
+  },
+];
+
+const MusicsInfoPresentation3: PersonType[] = [
+  {
+    name: "Rogério Vasconcelos Barbosa ",
+    picture: imageUrls.RogerioVasconcelos,
+    details:
+      "Graduou-se em Composição pela Escola de Música da UFMG, em Belo Horizonte. Completou o Doutorado em Composição no Instituto de Artes da UFRGS, em Porto Alegre.  Entre seus professores estão H. J. Koellreutter, Dante Grela, Oiliam Lana e Antônio Carlos Borges Cunha. Apresentou composições em diversos eventos de projeção nacional e internacional, em Belo Horizonte, Ouro Preto, Rio de Janeiro, São Paulo, Porto Alegre, Rosário (Argentina), Valdivia (Chile), Aveiro (Portugal), Lisboa (Portugal) e Münster (Alemanha). É professor associado da Escola de Música da UFMG, onde leciona composição, análise e disciplinas da área de tecnologia musical. Desde 2010 integra o corpo de professores do PPGMUS (Programa de Pós-graduação) na linha de pesquisa Processos Analíticos e Criativos. Em seu trabalho de composição, ferramentas tecnológicas participam de modo íntimo da gênese e desdobramento das ideias criativas. Sua produção inclui peças de câmara, orquestra e meios eletroacústicos.",
+  },
+];
+
+const MusicsInfoPresentation4: PersonType[] = [
+  {
+    name: "Sérgio Freire",
+    picture: imageUrls.SergioFreire,
+    details:
+      "Professor associado da Escola de Música da Universidade Federal de Minas Gerais, atuando nas áreas de composição, orquestração e sonologia. Desde 1998 coordena o Laboratório de Performance com Sistemas Interativos (LaPIS). É graduado em composição pela UFMG (1990), mestre em sonologia pelo Instituto de Sonologia, Haia, Holanda (1993). Possui doutorado em comunicação e semiótica pela PUC-SP (2004). Realizou estágio sandwich no Estúdio Eletrônico da Musik Akademie da Basileia, Suiça. Foi coordenador do Programa de Pós-Graduação em Música da UFMG, entre 2009 e 2015. Coordena, na UFMG, a colaboração internacional entre esta instituição e a Universidade McGill (Montreal, Canadá).",
+  },
+];
+
+const MusicsInfoPresentation5: PersonType[] = [
+  {
+    name: "Caio Costa Campos",
+    picture: imageUrls.CaioCostaCampos,
+    details:
+      "Compositor e improvisador natural de Belo Horizonte. Licenciado em música e bacharel em composição pela UFMG, atualmente é mestrando pela UFMG/UT Austin. Desenvolve pesquisa e trabalhos artísticos focados na compreensão de música e composição como performance, se apropriando de conhecimentos, inspirações e técnicas de outras artes performáticas na exploração do espaço performático da música. Tem experiência com programação criativa, sistemas interativos, eletrônica ao vivo e exploração da fisicalidade e práticas corporificadas em performances musicais. costacaiocampos@gmail.com",
+  },
+];
+
+const MusicsInfoPresentation6: PersonType[] = [
+  {
+    name: "Sebastián Barroso",
+    picture: imageUrls.SebastianBarroso,
+    details:
+      "Formado em violão pela Universidad Nacional de Cuyo. Nasceu na província de Mendoza, Argentina, em 1985, e começou sua formação musical aos 14 anos de idade. Em 2005, ingressou na FADUN Cuyo para formalizar seus estudos no curso de violão, sob a orientação da professora Cristina Dueñas. Possui mestrado em interpretação musical pela Universidade Federal de Minas Gerais. Atualmente, está cursando o doutorado no PPGMUS da Universidade Federal de Minas Gerais.",
+  },
+  {
+    name: "Eduardo Campolina",
+    picture: imageUrls.EduardoCampolina,
+    details:
+      "Professor da área de Composição na Escola de Música da Universidade Federal de Minas Gerais. Participa da Coordenação do ECrIS - Espaço de Criação e Investigação Sonora - no Conservatório UFMG, espaço dedicado à pesquisa e divulgação da música contemporânea ligada às tecnologias. Concentra suas pesquisas, atualmente, na área de Performance Experimental, com foco na ontologia de Gilles Deleuze/Félix Guattari, e na composição instrumental associada aos meios tecnológicos.",
+  },
+  {
+    name: "Marina Marcon Moreira",
+    picture: imageUrls.MarinaMarcon,
+    details:
+      "Possui doutorado em música pela Universidade Federal de Minas Gerais, sob a orientação do professor Dr. Rogério Vasconcelos Barbosa, e atua como sound designer para produções audiovisuais. Seu trabalho artístico surge da relação entre som e música para imagens em movimento.",
+  },
+];
+
 const MusicProgrammingWednesday = () => {
   return (
-    <>
+    <div className="music-programming-wednesday">
       <header>
         <h2>Espetáculo Multimídia: Música, Tecnologia e Outras Artes</h2>
       </header>
@@ -29,10 +112,17 @@ const MusicProgrammingWednesday = () => {
 
       <section className="details">
         <h2>Direção Artística/Organização</h2>
-        <p>
-          Cecília Nazaré de Lima, compositora, membro do grupo de pesquisa
-          Intermídia e professora da Escola de Música da UFMG
-        </p>
+
+        <ListPeople
+          list={[
+            {
+              name: "Cecília Nazaré de Lima",
+              picture: imageUrls.CeciliaNazare,
+              details:
+                "Compositora, membro do grupo de pesquisa Intermídia e professora da Escola de Música da UFMG",
+            },
+          ]}
+        />
 
         <h3>Três Canções sobre uma Série (1969)</h3>
         <ul>
@@ -52,6 +142,8 @@ const MusicProgrammingWednesday = () => {
           no início do século XX.
         </p>
 
+        <ListPeople list={MusicsInfoPresentation1} />
+
         <h3>Starboard (2016)</h3>
         <ul>
           <li>Intérprete: Fernando Rocha</li>
@@ -70,6 +162,8 @@ const MusicProgrammingWednesday = () => {
           eletrônicos são criados em tempo real pelo computador.
         </p>
 
+        <ListPeople list={MusicsInfoPresentation2} />
+
         <h3>Esboços (2024) – Animação de Curta Duração</h3>
         <ul>
           <li>Compositor: Rogério Vasconcelos</li>
@@ -82,9 +176,11 @@ const MusicProgrammingWednesday = () => {
           intensificando as sensações.
         </p>
 
+        <ListPeople list={MusicsInfoPresentation3} />
+
         <h3>Pandora (2005/2023), para Caixa-Clara e Sistema Interativo</h3>
         <ul>
-          <li>Intérprete: Sergio Freire</li>
+          <li>Intérprete: Sérgio Freire</li>
           <li>Compositor: Sérgio Freire</li>
         </ul>
         <p>
@@ -101,6 +197,8 @@ const MusicProgrammingWednesday = () => {
           acústica própria, na qual diferentes sons se encontram.
         </p>
 
+        <ListPeople list={MusicsInfoPresentation4} />
+
         <h3>Miniatura1 / facePiece (2024)</h3>
         <ul>
           <li>Intérpretes: Caio Costa Campos, Elisa Renner e Angel Blanco</li>
@@ -115,6 +213,8 @@ const MusicProgrammingWednesday = () => {
           possíveis articulações de expressão, algumas destas, talvez, próximas
           de uma musicalidade.
         </p>
+
+        <ListPeople list={MusicsInfoPresentation5} />
 
         <h3>
           Cheio de Dedos, para Violão, Trilha Eletroacústica e Vídeo (2023)
@@ -137,28 +237,39 @@ const MusicProgrammingWednesday = () => {
           diversidade dos materiais explorados, mas também coeso, pelas linhas
           de força colocadas em jogo em sua construção.
         </p>
+
+        <ListPeople list={MusicsInfoPresentation6} />
       </section>
-    </>
+    </div>
   );
 };
 
 const MusicProgrammingThursday = () => {
   return (
-    <>
+    <div className="music-programming-thursday">
       <header>
         <h2>Apresentação do filme-concerto “Cantos da Memória”</h2>
       </header>
 
+      <div className="esi-presentation-film">
+        <LazyLoadImage
+          src={imageUrls.BackgroundFilm}
+          alt={`Imagem do filme "Contos da Memória"`}
+        />
+      </div>
+
       <section className="intro">
         <p>
-          Em homenagem à querida colega Mônica Pedrosa de Pádua (1961 – 2024)
+          Em homenagem à querida colega <b>Mônica Pedrosa de Pádua</b> (1961 –
+          2024)
         </p>
         <blockquote>
           <p>
-            “Meu coração nesse momento é um castelo de cristal, transparente,
-            emitindo e recebendo amor”
+            “Meu coração nesse momento é um castelo de cristal
+            <br />
+            transparente, emitindo e recebendo amor”
           </p>
-          <footer>— Mônica Pedrosa de Pádua</footer>
+          <footer>Mônica Pedrosa de Pádua</footer>
         </blockquote>
       </section>
 
@@ -274,7 +385,7 @@ const MusicProgrammingThursday = () => {
           <dd>Nikolay Maslov</dd>
         </dl>
       </section>
-    </>
+    </div>
   );
 };
 
