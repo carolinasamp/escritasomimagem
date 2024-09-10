@@ -1,6 +1,7 @@
 import InternalTabs from "../../components/InternalTabs/InternalTabs";
 import { ScheduleList } from "../../infos/schedule.list";
-import { SubRoutesTitle } from "../../routes";
+import NextPageBox from "../../modules/NextPageBox";
+import { SubRoutesTitle, SubRoutesURL } from "../../routes";
 import "./style.scss";
 
 const GeneralSchedule = () => {
@@ -10,6 +11,11 @@ const GeneralSchedule = () => {
       <InternalTabs
         list={ScheduleList}
         className="esi-schedule-internal-tabs"
+      />
+
+      <NextPageBox
+        url={SubRoutesURL.THEMED_TABLES}
+        title={SubRoutesTitle.THEMED_TABLES}
       />
     </section>
   );

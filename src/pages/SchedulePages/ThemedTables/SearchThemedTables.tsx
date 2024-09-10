@@ -20,9 +20,12 @@ const SearchThemedTables: FC<SearchProps> = ({ list, onSearch, inFocus }) => {
             field.toLowerCase().includes(currentQuery)
           )
         );
-        const matchesTable = [table.table_number_title, table.table_title].some(
-          (field) => field.toLowerCase().includes(currentQuery)
-        );
+        const matchesTable = [
+          table.table_number_title,
+          table.table_title,
+          table.table_room ? table.table_room : "",
+          table.table_mediator ? table.table_mediator : "",
+        ].some((field) => field.toLowerCase().includes(currentQuery));
 
         return matchesTable || hasMatchingContent ? table : null;
       })

@@ -23,6 +23,11 @@
       flex: 1;
       text-align: center;
       cursor: pointer;
+      border-right: 1px solid #fff;
+
+      &:last-child {
+        border-right: 0;
+      }
 
       .internal-tabs-item-name {
         padding: 10px;

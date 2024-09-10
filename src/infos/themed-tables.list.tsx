@@ -11,6 +11,8 @@ const ThemedTableWednesdayList: ListThemedTableType[] = [
     table_title: "Escritas em Expansão",
     table_hours: "11h - 12:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Olga Valeska Soares Coelho (CEFET-MG)",
+    table_room: "104",
     content: [
       {
         title_table: "Memórias e espera: livros em expansão",
@@ -38,6 +40,8 @@ const ThemedTableWednesdayList: ListThemedTableType[] = [
     table_title: "Fotografia e Literatura",
     table_hours: "11h - 12:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Luciene Guimarães (UFSJ)",
+    table_room: "105",
     content: [
       {
         title_table:
@@ -62,6 +66,8 @@ const ThemedTableWednesdayList: ListThemedTableType[] = [
     table_title: "Quadrinhos e Romances Gráficos",
     table_hours: "11h - 12:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Stella Avelino (UFMG)",
+    table_room: "Auditório",
     content: [
       {
         title_table:
@@ -90,6 +96,8 @@ const ThemedTableWednesdayList: ListThemedTableType[] = [
     table_title: "Intermidialidade: Provocações Conceituais",
     table_hours: "11h - 12:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Ana Lúcia Costa Barbosa (UFMG)",
+    table_room: "214",
     content: [
       {
         title_table:
@@ -110,9 +118,8 @@ const ThemedTableWednesdayList: ListThemedTableType[] = [
       },
       {
         title_table:
-          "Cruzando fronteiras artísticas: a intermidialidade entre leite derramado e “bancarrota blues”, de Chico Buarque",
-        persons:
-          "Dhianifer Feitosa de Araújo (UNIFESSPA) <br /> Dirlenvalder Nascimento Loyolla (UNIFESSPA)",
+          "Intermidialidade nas traduções de <i>Os Sertões</i>, de Euclides da Cunha",
+        persons: "Ana Luiza Fernandes (PUC-RJ)",
       },
     ],
   },
@@ -121,6 +128,8 @@ const ThemedTableWednesdayList: ListThemedTableType[] = [
     table_title: "Instapoesia, Booktok e Audiolivro",
     table_hours: "11h - 12:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Barbara Vitoria Teixeira Ribeiro (UFSJ)",
+    table_room: "216",
     content: [
       {
         title_table:
@@ -151,6 +160,8 @@ const ThemedTableWednesdayList: ListThemedTableType[] = [
     table_title: "Pensar a MPB",
     table_hours: "11h - 12:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Joicy Silva Ferreira (UFMG)",
+    table_room: "203",
     content: [
       {
         title_table: "O comunitário e o particular na obra de Teresa Cristina",
@@ -161,6 +172,12 @@ const ThemedTableWednesdayList: ListThemedTableType[] = [
         persons:
           "Nathália Taise de Camargo Mendes (Universidade Presbiteriana Mackenzie)",
       },
+      {
+        title_table:
+          "Cruzando fronteiras artísticas: a intermidialidade entre leite derramado e “bancarrota blues”, de Chico Buarque",
+        persons:
+          "Dhianifer Feitosa de Araújo (UNIFESSPA) <br /> Dirlenvalder Nascimento Loyolla (UNIFESSPA)",
+      },
     ],
   },
   {
@@ -168,6 +185,8 @@ const ThemedTableWednesdayList: ListThemedTableType[] = [
     table_title: "Estudos de Adaptação",
     table_hours: "11h - 12:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Clara Matheus Nogueira",
+    table_room: "204",
     content: [
       {
         title_table: "A recepção das adaptações de livros para o cinema",
@@ -191,6 +210,8 @@ const ThemedTableWednesdayList: ListThemedTableType[] = [
     table_title: "Políticas das Imagens em Movimento",
     table_hours: "11h - 12:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Katia Hallak Lombardi (UFSJ)",
+    table_room: "211",
     content: [
       {
         title_table:
@@ -218,6 +239,8 @@ const ThemedTableWednesdayPart2List: ListThemedTableType[] = [
     table_title: "Pensar a Edição",
     table_hours: "14h - 15:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Camila Figueiredo (UFMG)",
+    table_room: "104",
     content: [
       {
         title_table: "Por uma teoria da enunciação editorial",
@@ -245,6 +268,8 @@ const ThemedTableWednesdayPart2List: ListThemedTableType[] = [
     table_title: "Palavra, Imagem, Narrativa",
     table_hours: "14h - 15:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Ana Luiza Ramazzina-Ghirardi (UNIFESP)",
+    table_room: "Auditório",
     content: [
       {
         title_table:
@@ -270,6 +295,8 @@ const ThemedTableWednesdayPart2List: ListThemedTableType[] = [
     table_title: "Arqueologias da Escrita e da Imagem",
     table_hours: "14h - 15:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Augustto Correa Cipriani (UFMG)",
+    table_room: "115",
     content: [
       {
         title_table: "Do livro por vir",
@@ -297,6 +324,8 @@ const ThemedTableWednesdayPart2List: ListThemedTableType[] = [
     table_title: "ESCREVER, DESENHAR, EDITAR",
     table_hours: "14h - 15:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Maria Rita Drummond Viana (UFOP)",
+    table_room: "116",
     content: [
       {
         title_table:
@@ -321,6 +350,8 @@ const ThemedTableWednesdayPart2List: ListThemedTableType[] = [
     table_title: "Ritmo e Poesia",
     table_hours: "14h - 15:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Isabella Santos Mundim (IFB)",
+    table_room: "203",
     content: [
       {
         title_table:
@@ -350,6 +381,8 @@ const ThemedTableWednesdayPart2List: ListThemedTableType[] = [
     table_title: "Autopublicação no Mundo Digital",
     table_hours: "14h - 15:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Marcelle G. Primo (PUC Minas)",
+    table_room: "204",
     content: [
       {
         title_table:
@@ -379,6 +412,8 @@ const ThemedTableWednesdayPart2List: ListThemedTableType[] = [
     table_title: "Políticas das Adaptações de Jane Austen",
     table_hours: "14h - 15:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Stella Maris de Carvalho Gonzalez",
+    table_room: "205",
     content: [
       {
         title_table:
@@ -405,6 +440,8 @@ const ThemedTableWednesdayPart2List: ListThemedTableType[] = [
     table_title: "Drama em Cena",
     table_hours: "14h - 15:30",
     table_day: "Quarta 11/09",
+    table_mediator: "Thaïs Flores Nogueira Diniz (UFMG)",
+    table_room: "105",
     content: [
       {
         title_table:
@@ -430,6 +467,8 @@ const ThemedTableWednesdayPart2List: ListThemedTableType[] = [
     table_title: "MULTIMODALIDADE E ENSINO",
     table_hours: "14h - 15:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Solange Viaro Padilha (PUC-PR)",
+    table_room: "211",
     content: [
       {
         title_table:
@@ -464,6 +503,8 @@ const ThemedTableThursdayList: ListThemedTableType[] = [
     table_title: "POLÍTICAS DAS IMAGENS",
     table_hours: "11h - 12:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Mario Cámara",
+    table_room: "106",
     content: [
       {
         title_table:
@@ -488,6 +529,8 @@ const ThemedTableThursdayList: ListThemedTableType[] = [
     table_title: "Poéticas Digitais",
     table_hours: "11h - 12:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Thaïs Flores Nogueira Diniz (UFMG)",
+    table_room: "104",
     content: [
       {
         title_table:
@@ -511,6 +554,8 @@ const ThemedTableThursdayList: ListThemedTableType[] = [
     table_title: "Quadrinhos, Charges e Caricaturas",
     table_hours: "11h - 12:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Lucas Basso (UFMG)",
+    table_room: "214",
     content: [
       {
         title_table:
@@ -541,6 +586,8 @@ const ThemedTableThursdayList: ListThemedTableType[] = [
     table_title: "Grafias de Luz",
     table_hours: "11h - 12:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Deborah Walter de Moura Castro (UNIFAL)",
+    table_room: "Auditório",
     content: [
       {
         title_table:
@@ -570,6 +617,8 @@ const ThemedTableThursdayList: ListThemedTableType[] = [
     table_title: "O Som no Signo",
     table_hours: "11h - 12:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Cecília Nazaré de Lima (UFMG)",
+    table_room: "216",
     content: [
       {
         title_table: "Relações tonais: da substância à produção de sentido",
@@ -592,6 +641,8 @@ const ThemedTableThursdayList: ListThemedTableType[] = [
     table_title: "Poderes do Som",
     table_hours: "11h - 12:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Paulo Henrique Caetano (UFSJ)",
+    table_room: "203",
     content: [
       {
         title_table:
@@ -621,6 +672,8 @@ const ThemedTableThursdayList: ListThemedTableType[] = [
     table_title: "Cordéis e Ilumiaras",
     table_hours: "11h - 12:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Ana Luiza Ramazzina-Ghirardi (UNIFESP)",
+    table_room: "204",
     content: [
       {
         title_table:
@@ -629,7 +682,7 @@ const ThemedTableThursdayList: ListThemedTableType[] = [
       },
       {
         title_table:
-          "<i>O Romance de Dom Pantero no Palco dos Pecadores</i>, de Ariano Suassuna: materialidade e sensorialidade",
+          "<i>O Romance de Dom Pantero no Palco dos Pecadores,</i> de Ariano Suassuna: materialidade e totalidade",
         persons: "Daniella Carneiro Libânio de Almada (UFMG)",
       },
       {
@@ -646,6 +699,8 @@ const ThemedTableThursdayList: ListThemedTableType[] = [
       "Corpo, Experiência e Picturalidade na Poesia de Ana Martins Marques",
     table_hours: "11h - 12:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Giovanna Soalheiro Pinheiro (UFMG)",
+    table_room: "205",
     content: [
       {
         title_table:
@@ -674,6 +729,8 @@ const ThemedTableThursdayList: ListThemedTableType[] = [
     table_title: "Escrita e Montagem",
     table_hours: "11h - 12:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Júlia Carolina Arantes (UFMG)",
+    table_room: "211",
     content: [
       {
         title_table:
@@ -684,7 +741,7 @@ const ThemedTableThursdayList: ListThemedTableType[] = [
         title_table:
           "Montagem de palavra e imagem nos ensaios híbridos de <i>Logis in einem Landhaus</i>, de W. G. Sebald",
         persons:
-          "Júlia Carolina Arantes (UFMG) </br> Luis Alberto Brandão Ferreira Santos (UFMG)",
+          "Júlia Carolina Arantes (UFMG) </br> Luis Alberto Ferreira Brandão Santos (UFMG)",
       },
       {
         title_table:
@@ -702,6 +759,8 @@ const ThemedTableThursdayPart2List: ListThemedTableType[] = [
     table_title: "Arqueologia dos Sentidos",
     table_hours: "14h - 15:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Tassiana Calsavara Andrade (UFSJ)",
+    table_room: "116",
     content: [
       {
         title_table:
@@ -725,6 +784,8 @@ const ThemedTableThursdayPart2List: ListThemedTableType[] = [
     table_title: "Materialidades Fílmicas",
     table_hours: "14h - 15:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Paulo Benites (UTFPR)",
+    table_room: "105",
     content: [
       {
         title_table:
@@ -750,6 +811,8 @@ const ThemedTableThursdayPart2List: ListThemedTableType[] = [
     table_title: "Práticas Editoriais",
     table_hours: "14h - 15:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Camila Augusta P. de Figueiredo (UFMG)",
+    table_room: "Auditório",
     content: [
       {
         title_table:
@@ -780,6 +843,8 @@ const ThemedTableThursdayPart2List: ListThemedTableType[] = [
     table_title: "Poéticas e Plásticas da Escrita",
     table_hours: "14h - 15:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Ellen Mariany da Silva Dias (UEL)",
+    table_room: "205",
     content: [
       {
         title_table:
@@ -797,6 +862,11 @@ const ThemedTableThursdayPart2List: ListThemedTableType[] = [
         persons:
           "Matheus Oliveira da Silva (UEL) </br> Ellen Mariany da Silva Dias (UEL)",
       },
+      {
+        title_table:
+          "Entre palavras e imagens: a poesia de Drummond nas teias da intermidialidade",
+        persons: "Ana Lúcia Costa Barbosa (UFMG)",
+      },
     ],
   },
   {
@@ -804,6 +874,8 @@ const ThemedTableThursdayPart2List: ListThemedTableType[] = [
     table_title: "Poesia e Tecnologia",
     table_hours: "14h - 15:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Raquel Beatriz Junqueira Guimarães (PUC Minas)",
+    table_room: "114",
     content: [
       {
         title_table:
@@ -831,6 +903,8 @@ const ThemedTableThursdayPart2List: ListThemedTableType[] = [
     table_title: "Afinidades Eletivas: Música, Pintura, Literatura",
     table_hours: "14h - 15:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Cecília Nazaré de Lima (UFMG)",
+    table_room: "115",
     content: [
       {
         title_table:
@@ -852,16 +926,13 @@ const ThemedTableThursdayPart2List: ListThemedTableType[] = [
     table_title: "Palavra, Imagem, Visualidade",
     table_hours: "14h - 15:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Augustto Correa Cipriani",
+    table_room: "203",
     content: [
       {
         title_table:
           "Percursos escriturais de Leonor: transformações poéticas e picturais de Ana Hatherly sobre o mote camoniano",
         persons: "Augustto Correa Cipriani (UFMG)",
-      },
-      {
-        title_table:
-          "As edições de <i>Dobra</i> (2021) e <i>Pardais</i> (2022) como chave de leitura da poesia ecfrástica de Adília Lopes",
-        persons: "Isabelle Scalambrini (UFMG)",
       },
       {
         title_table:
@@ -881,6 +952,8 @@ const ThemedTableThursdayPart2List: ListThemedTableType[] = [
     table_title: "Transmidiações",
     table_hours: "14h - 15:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Maristela Gonçalves Souza Machado (UFPel)",
+    table_room: "104",
     content: [
       {
         title_table:
@@ -910,6 +983,8 @@ const ThemedTableThursdayPart2List: ListThemedTableType[] = [
     table_title: "Pensar as Mídias no Ensino",
     table_hours: "14h - 15:30",
     table_day: "Quinta 12/09",
+    table_mediator: "Sandra M. S. Cavalcante (PUC Minas)",
+    table_room: "204",
     content: [
       {
         title_table:
@@ -943,6 +1018,8 @@ const ThemedTableFridayList: ListThemedTableType[] = [
     table_title: "Materialidades nas Artes, na Literatura e no Teatro",
     table_hours: "11h - 12:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Eliana Lourenço de Lima Reis (UFMG)",
+    table_room: "Auditório",
     content: [
       {
         title_table: "Os sentidos do orgânico: a arte de Precious Okoyomon",
@@ -968,6 +1045,8 @@ const ThemedTableFridayList: ListThemedTableType[] = [
     table_title: "Políticas dos Suportes",
     table_hours: "11h - 12:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Ana Paula Garcia (UFMG)",
+    table_room: "105",
     content: [
       {
         title_table:
@@ -991,6 +1070,8 @@ const ThemedTableFridayList: ListThemedTableType[] = [
     table_title: "Ouvindo Vozes",
     table_hours: "11h - 12:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Gabriel Marinho Camargo (UFMG)",
+    table_room: "115",
     content: [
       {
         title_table:
@@ -1016,6 +1097,8 @@ const ThemedTableFridayList: ListThemedTableType[] = [
     table_title: "Cinema de Sensações",
     table_hours: "11h - 12:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Barbara Vitoria Teixeira Ribeiro (UFSJ)",
+    table_room: "214",
     content: [
       {
         title_table:
@@ -1046,6 +1129,8 @@ const ThemedTableFridayList: ListThemedTableType[] = [
     table_title: "Lendo Ambiências",
     table_hours: "11h - 12:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Miriam de Paiva Vieira (UFSJ)",
+    table_room: "116",
     content: [
       {
         title_table: "Arquitetura, Virtualização e Ambiência",
@@ -1074,6 +1159,8 @@ const ThemedTableFridayList: ListThemedTableType[] = [
     table_title: "Materialidades dos Suportes",
     table_hours: "11h - 12:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Tassiana Calsavara Andrade (UFSJ)",
+    table_room: "216",
     content: [
       {
         title_table: "La imagen como superficie",
@@ -1096,6 +1183,8 @@ const ThemedTableFridayList: ListThemedTableType[] = [
     table_title: "Dimensões do Ritmo",
     table_hours: "11h - 12:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Israel Natã de Almeida Francisco (UFMG)",
+    table_room: "203",
     content: [
       {
         title_table: "Como os sambas da Portela nos fazem mais brasileiros?",
@@ -1118,6 +1207,8 @@ const ThemedTableFridayList: ListThemedTableType[] = [
     table_title: "Game Studies, Mangás e Animações",
     table_hours: "11h - 12:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Rogério Caetano de Almeida",
+    table_room: "204",
     content: [
       {
         title_table:
@@ -1132,7 +1223,7 @@ const ThemedTableFridayList: ListThemedTableType[] = [
       {
         title_table:
           "Recontando Histórias: <i>Castelo Animado</i> (2004) do <i>Studio Ghibli</i> e <i>The Little Match Girl</i> do Wednesday Campanella, produções japonesas, como reinterpretações de narrativas ocidentais",
-        persons: "Ana Carolina Lendino (PUC Minas)",
+        persons: "Ana Carolina Lendino Bandeira de Souza (PUC Minas)",
       },
     ],
   },
@@ -1144,6 +1235,8 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
     table_title: "Novos Materialismos, Outras Ontologias",
     table_hours: "11h - 12:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Hernán Ulm",
+    table_room: "Auditório",
     content: [
       {
         title_table: "O pluriverso ontocosmológico Guarani e os seus objetos",
@@ -1166,6 +1259,8 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
     table_title: "Nas Tramas das Letras: Tradução, Tecelagem, Ilustração",
     table_hours: "14h - 15:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Eliana Lourenço de Lima Reis (UFMG)",
+    table_room: "104",
     content: [
       {
         title_table:
@@ -1194,6 +1289,8 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
     table_title: "Adaptação, Transposição, Transmidiação",
     table_hours: "14h - 15:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Maristela Gonçalves Souza Machado (UFPel)",
+    table_room: "105",
     content: [
       {
         title_table:
@@ -1224,6 +1321,8 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
     table_title: "Literatura e Digitalidade",
     table_hours: "14h - 15:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Bruna Alves Oliveira Ambrosio (UNIFESP)",
+    table_room: "106",
     content: [
       {
         title_table:
@@ -1248,6 +1347,8 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
     table_title: "Artes Gráficas",
     table_hours: "14h - 15:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Alessandra Mara Vieira",
+    table_room: "114",
     content: [
       {
         title_table: "A hora vagabunda: um filme de papel",
@@ -1275,6 +1376,8 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
     table_title: "Corpos que Importam",
     table_hours: "14h - 15:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Fernanda Santos Rossi (PUC Minas)",
+    table_room: "205",
     content: [
       {
         title_table:
@@ -1304,6 +1407,8 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
     table_title: "Regimes de Escuta",
     table_hours: "14h - 15:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Luisa Godoy (UFMG)",
+    table_room: "116",
     content: [
       {
         title_table:
@@ -1315,11 +1420,6 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
         title_table: "Desenho como exercício para escutar os peixes que cantam",
         persons: "Luisa Godoy (UFMG)",
       },
-      {
-        title_table: "Ripley: silêncio, luz, sombra e sentido",
-        persons:
-          "Roberta Rios Amoêdo da Cunha Neves Menezes (UTFPR) </br> Rogério Caetano de Almeida (UTFPR)",
-      },
     ],
   },
   {
@@ -1327,6 +1427,8 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
     table_title: "Pensar a Écfrase",
     table_hours: "14h - 15:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Joicy Silva Ferreira (UFMG)",
+    table_room: "203",
     content: [
       {
         title_table:
@@ -1343,6 +1445,11 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
           "Além do Quadrado Negro: a écfrase dialética de Herbert do suprematismo de Maliévitch",
         persons: "Guilherme Stadler Penteado (UFPR)",
       },
+      {
+        title_table:
+          "As edições de <i>Dobra</i> (2021) e <i>Pardais</i> (2022) como chave de leitura da poesia ecfrástica de Adília Lopes",
+        persons: "Isabelle Scalambrini (UFMG)",
+      },
     ],
   },
   {
@@ -1350,6 +1457,8 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
     table_title: "PENSAR A COLAGEM E A ILUSTRAÇÃO",
     table_hours: "14h - 15:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Luiza Costa Manhães de Oliveira",
+    table_room: "204",
     content: [
       {
         title_table:
@@ -1376,6 +1485,8 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
     table_title: "O Som na Literatura",
     table_hours: "14h - 15:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Rafaela Vieira Ozava (PUC Minas)",
+    table_room: "115",
     content: [
       {
         title_table:
@@ -1405,6 +1516,8 @@ const ThemedTableFridayPart2List: ListThemedTableType[] = [
     table_title: "Memória, Ruínas e Experiência Urbana",
     table_hours: "14h - 15:30",
     table_day: "Sexta 13/09",
+    table_mediator: "Andréa Machado de Almeida Mattos (UFMG)",
+    table_room: "211",
     content: [
       {
         title_table: "Livros e bibliotecas, memórias e esquecimentos",

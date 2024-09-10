@@ -27,6 +27,23 @@
     font-weight: 700;
   }
 
+  .themed-table-mediator-room {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 100%;
+
+    label {
+      display: inline-flex;
+      font-weight: 700;
+
+      p {
+        margin-left: 4px;
+        color: $color-orange-3;
+      }
+    }
+  }
+
   .themed-table-title-wrapper {
     display: flex;
     text-transform: uppercase;

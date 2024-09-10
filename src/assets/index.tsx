@@ -10,6 +10,22 @@ import AudioPlayIcon from "./AudioPlay.icon";
 import AudioPauseIcon from "./AudioPause.icon";
 
 const imageUrls = {
+  AlexandreLopes: "https://www.escritasomimagem.com/images/AlexandreLopes.png",
+  ArthurMouraCampos:
+    "https://www.escritasomimagem.com/images/ArthurMouraCampos.png",
+  AsCasasDeDentro:
+    "https://www.escritasomimagem.com/images/AsCasasDeDentro.png",
+  CorteVivo: "https://www.escritasomimagem.com/images/CorteVivo.png",
+  Febril: "https://www.escritasomimagem.com/images/Febril.png",
+  MarceloPerillo: "https://www.escritasomimagem.com/images/MarceloPerillo.png",
+  MovimentoTexto: "https://www.escritasomimagem.com/images/MovimentoTexto.png",
+  Naturamovimento:
+    "https://www.escritasomimagem.com/images/Naturamovimento.png",
+  Obituario: "https://www.escritasomimagem.com/images/Obituario.png",
+  Palavrada: "https://www.escritasomimagem.com/images/Palavrada.png",
+  RafaelBaldam: "https://www.escritasomimagem.com/images/RafaelBaldam.png",
+  Rodagira: "https://www.escritasomimagem.com/images/Rodagira.png",
+  WelingtonDias: "https://www.escritasomimagem.com/images/WelingtonDias.png",
   BackgroundSound:
     "https://www.escritasomimagem.com/videos/background-sound.mp4",
   FlaviaLobato: "https://www.escritasomimagem.com/images/FlaviaLobato.png",
@@ -29,7 +45,7 @@ const imageUrls = {
   apoiadores: "https://www.escritasomimagem.com/images/apoiadores.png",
   organizadores: "https://www.escritasomimagem.com/images/organizadores.png",
   Background: "https://www.escritasomimagem.com/images/Background.png",
-  BackgroundFilm: "https://www.escritasomimagem.com/images/BackgroundFilm.png",
+  BackgroundFilm: "https://www.escritasomimagem.com/images/Background-film.png",
   Evento1: "https://www.escritasomimagem.com/images/Evento1.png",
   Evento2: "https://www.escritasomimagem.com/images/Evento2.png",
   banner_logo: "https://www.escritasomimagem.com/images/banner-logo.png",

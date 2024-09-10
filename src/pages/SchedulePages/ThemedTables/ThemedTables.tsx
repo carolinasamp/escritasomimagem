@@ -9,11 +9,12 @@ import {
   ThemedTableWednesdayList,
   ThemedTableWednesdayPart2List,
 } from "../../../infos/themed-tables.list";
-import { SubRoutesTitle } from "../../../routes";
+import { SubRoutesTitle, SubRoutesURL } from "../../../routes";
 import SearchThemedTables from "./SearchThemedTables";
 import "./style.scss";
 import { ListThemedTableType } from "./types";
 import { ContentThemedTable } from "./themed-tables.mapper";
+import NextPageBox from "../../../modules/NextPageBox";
 
 const ThemedTable = () => {
   const combinedList: ListThemedTableType[] = [
@@ -32,6 +33,7 @@ const ThemedTable = () => {
   const handleSearch = (filteredList: ListThemedTableType[]) => {
     setFilteredTables(filteredList);
   };
+
   return (
     <section className="esi-pages esi-themed-table">
       <h3 className="title-page">{SubRoutesTitle.THEMED_TABLES}</h3>
@@ -45,11 +47,20 @@ const ThemedTable = () => {
       </div>
       {onFocus ? (
         <div className="box">
-          <ContentThemedTable list={filteredTables} listFiltered />
+          {filteredTables.length ? (
+            <ContentThemedTable list={filteredTables} listFiltered />
+          ) : (
+            <>Nenhum resultado encontrado.</>
+          )}
         </div>
       ) : (
         <InternalTabs list={ThemedTablesList} />
       )}
+
+      <NextPageBox
+        url={SubRoutesURL.MUSIC_PROGRAMMING}
+        title={SubRoutesTitle.MUSIC_PROGRAMMING}
+      />
     </section>
   );
 };

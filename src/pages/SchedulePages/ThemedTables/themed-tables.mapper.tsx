@@ -7,6 +7,7 @@ import {
   ThemedTableWednesdayPart2List,
 } from "../../../infos/themed-tables.list";
 import { ListContentProps } from "./types";
+import "./style.scss";
 
 const ThemedTableWednesday = () => {
   return (
@@ -67,6 +68,8 @@ const ContentThemedTable = ({
             table_title,
             table_hours,
             table_day,
+            table_mediator,
+            table_room,
             content,
           } = item;
           return (
@@ -81,6 +84,16 @@ const ContentThemedTable = ({
                   <p>{table_number_title}</p>
                   <p>{table_title}</p>
                 </b>
+                {table_mediator && table_room && (
+                  <span className="themed-table-mediator-room">
+                    <label>
+                      Sala: <p>{table_room}</p>
+                    </label>
+                    <label>
+                      Mediador: <p>{table_mediator}</p>
+                    </label>
+                  </span>
+                )}
               </span>
               <div className="themed-table-content-wrapper">
                 {content.map((contentItem, indexContent) => {

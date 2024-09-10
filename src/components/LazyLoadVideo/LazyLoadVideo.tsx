@@ -41,7 +41,7 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
         className="lazy-load-video"
         onCanPlay={() => setIsLoaded(true)}
         disablePictureInPicture={false}
-        style={{ opacity: isLoaded ? 1 : 0 }}
+        style={{ display: isLoaded ? "block" : "none" }}
       >
         <source src={src} type="video/mp4" />
         Seu navegador não suporta a tag de vídeo.

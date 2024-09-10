@@ -12,7 +12,7 @@ const ListPerson = ({ list, className }: ListPersonProps) => {
         return (
           <div key={index} className={`person ${className || ""}`}>
             {picture && (
-              <div>
+              <div className="person-image">
                 <LazyLoadImage src={picture} alt={`Foto de ${name}`} />
                 {caption && (
                   <span className="person-image-caption">{caption}</span>
@@ -22,7 +22,10 @@ const ListPerson = ({ list, className }: ListPersonProps) => {
             <figcaption
               className={`person-details ${!picture ? "no-image" : ""}`}
             >
-              <h2 className="person-name">{name}</h2>
+              <h2
+                className="person-name"
+                dangerouslySetInnerHTML={{ __html: name }}
+              />
               {presentation && (
                 <small className="person-presentation">{presentation}</small>
               )}

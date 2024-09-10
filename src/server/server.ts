@@ -16,6 +16,7 @@ app.get(RoutesURL.HOME, serveIndexHtml);
 
 app.get(SubRoutesURL.GENERAL_SCHEDULE, serveIndexHtml);
 app.get(SubRoutesURL.THEMED_TABLES, serveIndexHtml);
+app.get(SubRoutesURL.CREATIVE_PRODUCTIONS, serveIndexHtml);
 app.get(SubRoutesURL.MUSIC_PROGRAMMING, serveIndexHtml);
 
 app.get(RoutesURL.SPEAKERS, serveIndexHtml);

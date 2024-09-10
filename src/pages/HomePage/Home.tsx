@@ -2,7 +2,7 @@ import { AnchorIcon, imageUrls } from "../../assets";
 import LazyLoadImage from "../../components/LazyLoadImage";
 import LazyLoadVideo from "../../components/LazyLoadVideo";
 import NextPageBox from "../../modules/NextPageBox";
-import { RoutesURL, RoutesTitle } from "../../routes";
+import { SubRoutesURL, SubRoutesTitle } from "../../routes";
 import "./style.scss";
 
 const Home = () => {
@@ -33,6 +33,30 @@ const Home = () => {
           copresença, interação, transferência, circulação, entre outras, se
           constitui na sua própria condição de existência.
         </p>
+
+        <div className="esi-home-address">
+          <label>
+            - Local
+            <a href="https://maps.app.goo.gl/HnP8pGSLirVURxMYA">
+              PUC Minas: R. Dom José Gaspar, 500 - Coração Eucarístico, Belo
+              Horizonte - MG, 30535-901
+            </a>
+          </label>
+          <label>
+            - Auditório do Museu
+            <a href="https://maps.app.goo.gl/cC3gBskN82fHbtb4A">
+              R. Dom José Gaspar, 290 - Coração Eucarístico, Belo Horizonte -
+              MG, 30535-901
+            </a>
+          </label>
+          <label>
+            - Salas onde acontecerão as mesas temáticas
+            <a href="https://maps.app.goo.gl/HnP8pGSLirVURxMYA">
+              R. Dom Jose Gaspar, 500 - Prédio 6 - Coração Eucarístico, Belo
+              Horizonte - MG, 30535-901
+            </a>
+          </label>
+        </div>
 
         <a
           className="esi-home-presentation-link"
@@ -71,7 +95,10 @@ const Home = () => {
           <LazyLoadImage src={imageUrls.Evento2} alt="Evento 2" />
         </div>
       </section>
-      <NextPageBox url={RoutesURL.SPEAKERS} title={RoutesTitle.SPEAKERS} />
+      <NextPageBox
+        url={SubRoutesURL.GENERAL_SCHEDULE}
+        title={SubRoutesTitle.GENERAL_SCHEDULE}
+      />
     </div>
   );
 };

@@ -17,6 +17,12 @@
 
   .internal-tabs .internal-tabs-wrapper {
     border-radius: 4px;
+    width: 100%;
+
+    .internal-tabs-item {
+      flex: inherit;
+      width: 100%;
+    }
   }
 
   .internal-tabs-content {

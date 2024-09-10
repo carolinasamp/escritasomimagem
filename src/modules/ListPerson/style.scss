@@ -1,5 +1,13 @@
 @import "../../utils/variables.scss";
 
+.MOBILE {
+  .list-person--speakers {
+    .person-image {
+      display: contents;
+    }
+  }
+}
+
 .list-person-container {
   display: flex;
   font-family: "Roboto", sans-serif;

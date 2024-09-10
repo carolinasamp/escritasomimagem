@@ -81,6 +81,16 @@
 
   &-minibios {
     margin-top: 16px;
+
+    .list-person-container {
+      .person {
+        flex-direction: column;
+
+        .person-image {
+          margin: 0 auto;
+        }
+      }
+    }
   }
 }
 
@@ -91,11 +101,31 @@
       align-items: center;
     }
 
-    &-image {
-      margin: 16px 16px 16px 0;
+    &-wrapper-schedule-image {
+      margin: 8px;
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      b {
+        width: 100%;
+        margin-bottom: 8px;
+
+        div {
+          width: 100%;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+
+          div + div {
+            margin-left: 4px;
+          }
+        }
+      }
+
+      figure {
+        width: 100%;
+      }
 
       &:last-child {
         margin-right: 0;

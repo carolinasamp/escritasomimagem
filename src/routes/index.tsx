@@ -12,6 +12,7 @@ import Secretary from "../pages/OrganizationPages/Secretary";
 import GeneralSchedule from "../pages/SchedulePages/GeneralSchedule";
 import MusicProgramming from "../pages/SchedulePages/MusicProgramming";
 import ThemedTable from "../pages/SchedulePages/ThemedTables/ThemedTables";
+import CreativeProductions from "../pages/SchedulePages/CreativeProductions/CreativeProductions";
 
 export enum RoutesURL {
   HOME = "/",
@@ -24,6 +25,7 @@ export enum RoutesURL {
 export enum RoutesTitle {
   HOME = "",
   SCHEDULE = "Programação",
+  CREATIVE_PRODUCTIONS = "Produções criativas",
   SPEAKERS = "Conferencistas",
   SHORT_COURSES = "Minicursos",
   ORGANIZATION = "Organização",
@@ -34,6 +36,7 @@ export enum RoutesTitle {
 export enum SubRoutesURL {
   GENERAL_SCHEDULE = "/programacao-geral",
   THEMED_TABLES = "/mesas-tematicas",
+  CREATIVE_PRODUCTIONS = "/producoes-criativas",
   MUSIC_PROGRAMMING = "/programacao-musical",
   ORGANIZING_COMMITTEE = "/comissao-organizadora",
   SCIENTIFIC_COMMITTEE = "/comite-cientifico",
@@ -44,6 +47,7 @@ export enum SubRoutesURL {
 export enum SubRoutesTitle {
   GENERAL_SCHEDULE = "Programação Geral",
   THEMED_TABLES = "Mesas Temáticas",
+  CREATIVE_PRODUCTIONS = "Produções Criativas",
   MUSIC_PROGRAMMING = "Programação Musical",
   ORGANIZING_COMMITTEE = "Comissão Organizadora",
   SCIENTIFIC_COMMITTEE = "Comitê Científico",
@@ -64,7 +68,10 @@ export enum RoutesIDs {
 export enum SubRoutesIDs {
   GENERAL_SCHEDULE = "general-schedule",
   THEMED_TABLES = "themed-tables",
+  CREATIVE_PRODUCTIONS = "creative-productions",
   MUSIC_PROGRAMMING = "music-programming",
+  WORKS = "works",
+  TABLES = "tables",
   ORGANIZING_COMMITTEE = "organizing-committee",
   SCIENTIFIC_COMMITTEE = "scientific-committee",
   SECRETARY = "secretary",
@@ -93,6 +100,12 @@ const RouteInformation = [
         id: SubRoutesIDs.THEMED_TABLES,
         url: SubRoutesURL.THEMED_TABLES,
         element: <ThemedTable />,
+      },
+      {
+        title: SubRoutesTitle.CREATIVE_PRODUCTIONS,
+        id: SubRoutesIDs.CREATIVE_PRODUCTIONS,
+        url: SubRoutesURL.CREATIVE_PRODUCTIONS,
+        element: <CreativeProductions />,
       },
       {
         title: SubRoutesTitle.MUSIC_PROGRAMMING,

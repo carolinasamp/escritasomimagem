@@ -8,6 +8,8 @@ type ListThemedTableType = {
   table_title: string;
   table_hours: string;
   table_day: string;
+  table_mediator?: string;
+  table_room?: string;
   content: ListThemedTableContentType[];
 };
 
