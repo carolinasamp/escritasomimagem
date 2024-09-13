@@ -1,0 +1,78 @@
+@import "../../../utils/variables.scss";
+
+.esi-themed-table {
+  .esi-creative-productions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-works {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #f18437;
+
+    &:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    h2 {
+      font-size: 21px;
+    }
+
+    h2 + .lazyload-wrapper {
+      img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+    }
+
+    a {
+      color: $color-orange-3;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .content-works-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .lazyload-wrapper {
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .obituario .list-person-container {
+    .person .lazyload-wrapper {
+      min-height: 100%;
+    }
+
+    img {
+      height: max-content;
+    }
+  }
+
+  .list-person-container {
+    margin-top: 16px;
+  }
+
+  .content-works-wrapper {
+    display: flex;
+  }
+
+  &-internal-tabs {
+    width: 100%;
+  }
+
+  .content-works-body {
+    margin-top: 16px;
+  }
+}
